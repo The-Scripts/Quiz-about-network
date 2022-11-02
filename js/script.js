@@ -1,16 +1,15 @@
 const nextBtn = document.getElementById("next");
-let ktrPyt = 1;
+const prevBtn = document.getElementById("prev");
+let questNumb = 0;
 
 //czas
 //pytania i odpowiedzi lista2D
 //tab co już było
 //licznik i wyświetlacz ilości pytań
 
-
-nextBtn.addEventListener("click", () => {
-    document.getElementsByTagName("ul")[0].textContent = " "; //usuwa zasady
-
-    switch(ktrPyt) {
+function prevAndNext(){
+    console.log(questNumb);
+    switch(questNumb) {
         case 1:
             document.getElementsByTagName("h1")[0].textContent = "Pytanie 1"; //wyświetla które pytanie z koleji
             document.getElementById("quest").textContent = "Lorem ipsum dolor sit amet? 1"; //wyświetla wylosowane pytanie
@@ -32,7 +31,32 @@ nextBtn.addEventListener("click", () => {
             document.getElementById("quest").textContent = "Lorem ipsum dolor sit amet? 5";
         break;
     }
+}
+function checkPrevBtn(){
+    if(questNumb >= 0)
+        prevBtn.style.display = "block";
+    if(questNumb >= 1)
+        prevBtn.removeAttribute("disabled");
+    // if(questNumb == 1)
+    //     prevBtn.setAttribute("disabled", "")
 
-ktrPyt++;
+}
+nextBtn.addEventListener("click", () => { //NEXT
+    checkPrevBtn();
+    if(questNumb == 0)
+        nextBtn.setAttribute("value", "Next");
+    if(questNumb<5){ //5 to ilość pytań (domyślnie ma być 10)
+        document.getElementsByTagName("ul")[0].textContent = " "; //usuwa zasady
+        questNumb++;
+        prevAndNext();
+    }
+})
+prevBtn.addEventListener("click", () => { //PREV
+    checkPrevBtn();
+    if(questNumb > 1){
+        document.getElementsByTagName("ul")[0].textContent = "";
+        questNumb--;
+        prevAndNext();
+    }
 })
 
