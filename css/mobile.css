@@ -4,6 +4,9 @@ body {
   background-size: cover;
   font-family: "Roboto", sans-serif;
 }
+body #buttons-wrapper {
+  display: none;
+}
 body hr {
   border: #0c066a solid 2px;
 }
@@ -20,8 +23,8 @@ body #btn {
   font-size: 2rem;
   text-transform: uppercase;
   font-variant: small-caps;
-  width: 90vw;
-  height: 90%;
+  width: 70vw;
+  height: 80%;
   margin-top: 20%;
   transition: 200ms ease-in-out;
   font-weight: bold;
@@ -40,20 +43,39 @@ body #quest {
   text-align: center;
   font-size: 1.5rem;
 }
-body #next, body #prev {
+body #next {
   color: #0c066a;
-  background: #b7a8ff;
   box-shadow: 1px 1px 0px #0c066a;
   border: solid 2px #6f53ff;
   border-radius: 20px;
-  width: 40vw;
-  height: 80px;
+  width: 70vw;
+  height: 6vh;
   transition: 200ms ease-in-out;
   text-transform: uppercase;
   font-variant: small-caps;
   font-weight: bolder;
+  font-size: 2rem;
 }
-body #next:active, body #prev:active {
+body #next:active {
+  background: #6f53ff;
+  box-shadow: none;
+  color: rgb(236, 236, 236);
+  border: none;
+}
+body #prev {
+  color: #0c066a;
+  box-shadow: 1px 1px 0px #0c066a;
+  border: solid 2px #6f53ff;
+  border-radius: 20px;
+  width: 40vw;
+  height: 6vh;
+  transition: 200ms ease-in-out;
+  text-transform: uppercase;
+  font-variant: small-caps;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+body #prev:active {
   background: #6f53ff;
   box-shadow: none;
   color: rgb(236, 236, 236);
