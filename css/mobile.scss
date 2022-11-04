@@ -7,12 +7,19 @@ $text-primary: rgb(236, 236, 236);
 
 body {
 
+    #buttons-wrapper {
+        display: none;
+    }
+
     hr {
         border: $bg-secondary solid 2px;
     }
+
+
     background: radial-gradient(#6f53ff, #534ae9);
     background-size: cover;
     font-family: 'Roboto', sans-serif;
+    //background-image: url(background-temp.svg);
 
     #myform {
         display: grid;
@@ -28,8 +35,8 @@ body {
         font-size: 2rem;
         text-transform: uppercase;
         font-variant: small-caps;
-        width: 90vw;
-        height: 90%;
+        width: 70vw;
+        height: 80%;
         margin-top: 20%;
         transition: 200ms ease-in-out;
         font-weight: bold;
@@ -52,18 +59,18 @@ body {
         font-size: 1.5rem;
     }
 
-    #next, #prev {
+    #next {
         color: $bg-secondary;
-        background: #b7a8ff;
         box-shadow: 1px 1px 0px $bg-secondary;
         border: solid 2px $bg-primary;
         border-radius: 20px;
-        width: 40vw;
-        height: 80px;
+        width: 70vw;
+        height: 6vh;
         transition: 200ms ease-in-out;
         text-transform: uppercase;
         font-variant: small-caps;
         font-weight: bolder;
+        font-size: 2rem;
 
         &:active {
             background: $bg-primary;
@@ -72,6 +79,26 @@ body {
             border: none;
         }
     }
+    #prev {
+            color: $bg-secondary;
+            box-shadow: 1px 1px 0px $bg-secondary;
+            border: solid 2px $bg-primary;
+            border-radius: 20px;
+            width: 40vw;
+            height: 6vh;
+            transition: 200ms ease-in-out;
+            text-transform: uppercase;
+            font-variant: small-caps;
+            font-weight: bolder;
+            font-size: 2rem;
+    
+        &:active {
+                background: $bg-primary;
+                box-shadow: none;
+                color: $text-primary;
+                border: none;
+            }
+        }
 
     .start-prev-wrapper {
         display: flex;
