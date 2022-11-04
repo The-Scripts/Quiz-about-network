@@ -10,9 +10,7 @@ let questNumb = 0;
 function prevAndNext() {
 	console.log(questNumb);
 	document.getElementsByTagName("h1")[0].textContent = `Pytanie ${questNumb}`;
-	document.getElementById(
-		"quest"
-	).textContent = `Lorem ipsum dolor sit amet? ${questNumb}`;
+	document.getElementById("quest").textContent = `Lorem ipsum dolor sit amet? ${questNumb}`;
 }
 
 function checkPrevBtn() {
