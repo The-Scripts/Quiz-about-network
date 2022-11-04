@@ -1,3 +1,72 @@
-h1 {
-    color: red;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+body {
+  background: radial-gradient(#6f53ff, #534ae9);
+  background-size: cover;
+  font-family: "Roboto", sans-serif;
 }
+body hr {
+  border: #0c066a solid 2px;
+}
+body #myform {
+  display: grid;
+  justify-content: center;
+}
+body #btn {
+  background: #836aff;
+  border-radius: 40px;
+  box-shadow: 3px 3px 0px #0c066a;
+  border: solid 5px #0c066a;
+  color: rgb(236, 236, 236);
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-variant: small-caps;
+  width: 90vw;
+  height: 90%;
+  margin-top: 20%;
+  transition: 200ms ease-in-out;
+  font-weight: bold;
+}
+body #btn:active {
+  background: #0c066a;
+  box-shadow: none;
+}
+body h1 {
+  color: rgb(236, 236, 236);
+  text-align: center;
+  text-transform: uppercase;
+}
+body #quest {
+  color: rgb(236, 236, 236);
+  text-align: center;
+  font-size: 1.5rem;
+}
+body #next, body #prev {
+  color: #0c066a;
+  background: #b7a8ff;
+  box-shadow: 1px 1px 0px #0c066a;
+  border: solid 2px #6f53ff;
+  border-radius: 20px;
+  width: 40vw;
+  height: 80px;
+  transition: 200ms ease-in-out;
+  text-transform: uppercase;
+  font-variant: small-caps;
+  font-weight: bolder;
+}
+body #next:active, body #prev:active {
+  background: #6f53ff;
+  box-shadow: none;
+  color: rgb(236, 236, 236);
+  border: none;
+}
+body .start-prev-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20%;
+}
+body ul {
+  list-style-type: none;
+  color: rgb(236, 236, 236);
+  font-size: 2REM;
+  text-align: center;
+}/*# sourceMappingURL=mobile.css.map */
