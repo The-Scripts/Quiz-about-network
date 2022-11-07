@@ -1,0 +1,301 @@
+Questions and answers
+1. Jakie urz¹dzenia maj¹ adres MAC?
+	a. Sprzêt sieciowy
+	b. Ka¿de urz¹dzenie
+	c. Peryferia
+	d. Procesory
+
+2. Co to jest numer IP?
+	a. Ci¹g liter i cyfr
+	b. Lista urz¹dzeñ w sieci
+	c. Maska podsieci
+	d. Geolokalizacja urz¹dzenia
+
+3. Jakie mamy klasy numerów IP?
+	a. A, B, C
+	b. Low, Medium, High
+	c. 1, 2, 3
+	d. Base, Medium, Full
+
+4. Do czego s³u¿y maska podsieci?
+	a. Znalezienie hosta w IP
+	b. Znalezienie sieci w IP
+	c. Znalezienie IP
+	d. Znalezienie adresu MAC
+
+5. Do czego s³u¿y nam protokó³ TCP/IP?
+	a. Ujednolica przesy³ane pakiety
+	b. Przesy³a pakiety
+	c. Szyfrujê pakiety
+	d. Identyfikacji urz¹dzeñ
+
+6. Serwer zajmuje siê: 
+	a. Udostêpnianiem zasobów
+	b. Wyœwietlaniem obrazu
+	c. Drukowaniem
+	d. Kopaniem BTC
+
+7. Czym jest klient?
+	a. Przyjmuje informacje z serwera
+	b. Dostarcza zasoby
+	c. Wysy³a informacje do hosta
+	d. Jest spisem protoko³ów
+
+8. Czym siê charakteryzujê sieæ P2P?
+	a. Brakiem serwera
+	b. Posiadaniem serwera
+	c. Punktem centralny
+	d. Kszta³tem pierœcienia
+
+9. Do czego s³u¿y serwer DNS?
+	a. Do t³umaczenia nazw domen
+	b. Do udostêpniania zasobów
+	c. Do Przesy³ania danych
+	d. Do t³umaczenia IP
+ 
+10. Co to jest serwer DHCP?
+	a. Wysy³a IP 
+	b. Wysy³a dokument
+	c. Przetwarza informacje
+	d. Przetwarza IP
+
+11. Na co pozwala serwer pocztowy?
+	a. Na wysy³anie wiadomoœci 
+	b. Przetwarzanie ¿¹dañ HTTP
+	c. Wykonywanie trudnych obliczeñ
+	d. Przechowywanie danych
+
+12. Jaki jest domyœlny port serwera us³ugi WWW?
+	a. 80
+	b. 8080
+	c. 8081
+	d. 800
+
+13. Zestaw regu³ definiuj¹cych sposób przesy³ania informacji w sieci opisuje
+	a. Protokó³
+	b. Zasada
+	c. Regu³a
+	d. Standard
+
+14. Jaki adres IP odpowiada nazwie mnemonicznej localhost?
+	a. 127.0.0.1
+	b. 192.168.1.255
+	c. 192.168.1.0
+	d. 192.168.1.1
+
+15. Który protokó³ zapewnia szyfrowane po³¹czenia?
+	a. SSH
+	b. TELNET
+	c. DHCP
+	d. DNS	
+
+16. Który z protoko³ów jest stosowany w telefonii internetowej?
+	a. SIP
+	b. FTP
+	c. NetBEUI
+	d. HTTP
+
+17. Do zdalnego zarz¹dzania stacjami roboczymi nie jest stosowany
+	a. Program Wireshark
+	b. Pulpit zdalny
+	c. program UltraVNC
+	d. program TeamViewer
+
+18. Na czym polega ró¿nica pomiêdzy serwerem WWW a FTP?
+	a. WWW jest szybszy
+	b. FTP jest szybszy
+	c. WWW jest tak samo szybki
+	d. FTP posiada równoleg³e pobieranie
+ 
+19. PAN ma zasiêg: 
+	a. Lokalny
+	b. Krajowy
+	c. Globalny
+	d. Miêdzynarodowy
+
+20. Topologie fizyczne sieci to m.in.  
+	a. Magistrala i gwiazda
+	b. Okrêtka i skrêtka
+	c. Obwód i obrys
+	d. Obwódka i obrys
+
+21. Topologia logiczna sieci to m. in.
+	a. Punkt-punkt
+	b. Przekazywanie monety
+	c. Jednodostêpowa
+	d. Równoleg³a
+
+22. Media sieciowe dzielimy na:
+	a. Przewodowe i bezprzewodowe
+	b. Skrêtki i œwiat³owody
+	c. LAN i WAN
+	d. LAN i MAN
+
+23. Jak¹ jednostkê danych stosujemy w sieciach
+	a. b/s
+	b. B/s
+	c. KiB/s
+	d. MB/s
+
+24. Jaka jest komenda na sprawdzenie pingu w CMD?
+	a. Ping [adres]
+	b. Ipconfig [adres]
+	c. Net view [adres]
+	d. Display ping [adres]
+
+25. Jakie informacje wyœwietla komenda ipconfig /all?
+	a. Pe³na konfiguracja TCP/IP
+	b. Zawartoœæ pamiêci podrêcznej
+	c. Identyfikator klasy DHCP
+	d. Wysy³a komunikat DHCP
+
+26. Jakie zak³ócenie mo¿e wyst¹piæ w kablu?
+	a. Przes³uch
+	b. Pos³uch
+	c. Przes³uch
+	d. Echo
+
+27. Sieci w standardzie Ethernet do 100 Mbit/s.
+	a. Ethernet 
+	b. Fast Ethernet
+	c. Faster Ethernet
+	d. Gigabit Ethernet
+ 
+28. Narzêdzia zaciskaj¹ce z³¹czki na koñcach przewodów.
+	a. Zaciskarka
+	b. Œciagacz
+	c. Obcinacz
+	d. Obrabiarka
+
+29. Co chroni nas przed zwarciem?
+	a. Wy³¹cznik nadmiarowo-pr¹dowy
+	b. Wy³¹cznik wra¿liwy 
+	c. Wy³¹cznik przepiêciowy
+	d. Wy³¹cznik ró¿nicowopr¹dowy
+
+	30. Narzêdzia do uderzeniowe do terminali LSA
+	a. Nó¿ krosowniczy
+	b. Przyciskarka
+	c. Przeciskarka
+	d. Narzêdzie uniwersalne
+
+31. Typ okablowania w du¿ych sieciach
+	a. Kampusowe
+	b. Pionowe
+	c. Poziome
+	d. Piêtrowe
+
+32. Metoda wytwarzania jakiegoœ dobra
+	a. Technologia 
+	b. Przemys³
+	c. Produkcja
+	d. Industrializacja
+
+33. Karta która przekszta³ca pakiety danych w sygna³y.
+	a. Karta sieciowa
+	b. Karta Ethernet
+	c. Karta Wi-Fi
+	d. Karta transferuj¹ca
+
+34. Kolor ostatniej ¿y³ki w skrêtce typu B
+	a. Br¹zowy
+	b. Niebieski
+	c. Zielony
+	d. Pomarañczowy
+
+35. Kolor drugiej ¿y³ki w skrêtce typu A
+	a. Zielony
+	b. Niebieski
+	c. Br¹zowy
+	d. Pomarañczowy
+
+36. Rodzaj przewodu s³u¿¹cego do przesy³ania informacji
+	a. Skrêtka
+	b. Okrêtka
+	c. Owijka
+	d. Skrêtki
+ 
+37. Jak¹ d³ugoœæ ma IPv4?
+	a. 32 bity
+	b. 64 bity
+	c. 16 bitów
+	d. 8 bitów
+
+38. Pojêcie skrêtka nieekranowa dotyczy skrótu:
+	a. UTP
+	b. ETP
+	c. IOT
+	d. IOP
+
+39. Przysz³oœciowa sieæ w standardzie Ethernet
+	a. 10 gigabit 
+	b. 50 gigabit
+	c. 1 gigabit
+	d. 100 gigabit
+
+40. Skrêtka kat. 6 ma zasiêg:
+	a. 100 metrów
+	b. 50 metrów
+	c. 150 metrów 
+	d. 80 metrów
+
+41. Kabel FTP to
+	a. Kabel foliowany
+	b. Kabel niefoliowany
+	c. Kabel z uziemieniem
+	d. Kabel z oplotem
+
+42. Podstawa systemu binarnego to:
+	a. 2 
+	b. 10
+	c. 16
+	d. 1
+
+43. Skrêtka UTP sk³ada siê z 
+	a. czterech par
+	b. dwóch par
+	c. oœmiu par
+	d. szeœciu par
+
+44. IPv6 ma d³ugoœæ
+	a. 128 bitów
+	b. 64 bitów
+	c. 256 bitów
+	d. 32 bitów
+
+45. Jak¹ d³ugoœæ ma adres MAC?
+	a. 48 bity
+	b. 32 bity
+	c. 64 bity
+	d. 54 bity
+ 
+46. NAT t³umaczy adresy
+	a. Prywatne na publiczne
+	b. Publiczne na prywatne 
+	c. Lokalne na ogólne
+	d. Ogólne na lokalne
+
+47. Urz¹dzenie sieciowe to m. in.
+	a. Koncentrator 
+	b. Kompensator
+	c. Kontener
+	d. Kondensator
+
+48. Ile mamy klas adresu IPv4?
+	a. 5
+	b. 4
+	c. 3
+	d. 6
+
+49. Zapora internetowa s³u¿y do:
+	a. Filtrowania ruchu
+	b. Filtrowania danych
+	c. Wyszukiwania adresów IP
+	d. Sprawdzania informacji
+
+50. Który protokó³ jest wykorzystywany prze polecenie ping?
+	a. ICMP
+	b. IPX
+	c. FTP
+	d. SMTP
+
