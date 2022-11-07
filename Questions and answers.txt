@@ -1,300 +1,300 @@
 Questions and answers
-1. Jakie urz¹dzenia maj¹ adres MAC?
-	a. Sprzêt sieciowy
-	b. Ka¿de urz¹dzenie
+1. Jakie urzÄ…dzenia majÄ… adres MAC?
+	> a. SprzÄ™t sieciowy
+	b. KaÅ¼de urzÄ…dzenie
 	c. Peryferia
 	d. Procesory
 
 2. Co to jest numer IP?
-	a. Ci¹g liter i cyfr
-	b. Lista urz¹dzeñ w sieci
+	> a. CiÄ…g liter i cyfr
+	b. Lista urzÄ…dzeÅ„ w sieci
 	c. Maska podsieci
-	d. Geolokalizacja urz¹dzenia
+	d. Geolokalizacja urzÄ…dzenia
 
-3. Jakie mamy klasy numerów IP?
-	a. A, B, C
+3. Jakie mamy klasy numerÃ³w IP?
+	> a. A, B, C
 	b. Low, Medium, High
 	c. 1, 2, 3
 	d. Base, Medium, Full
 
-4. Do czego s³u¿y maska podsieci?
-	a. Znalezienie hosta w IP
+4. Do czego sÅ‚uÅ¼y maska podsieci?
+	> a. Znalezienie hosta w IP
 	b. Znalezienie sieci w IP
 	c. Znalezienie IP
 	d. Znalezienie adresu MAC
 
-5. Do czego s³u¿y nam protokó³ TCP/IP?
-	a. Ujednolica przesy³ane pakiety
-	b. Przesy³a pakiety
-	c. Szyfrujê pakiety
-	d. Identyfikacji urz¹dzeñ
+5. Do czego sÅ‚uÅ¼y nam protokÃ³Å‚ TCP/IP?
+	> a. Ujednolica przesyÅ‚ane pakiety
+	b. PrzesyÅ‚a pakiety
+	c. SzyfrujÄ™ pakiety
+	d. Identyfikacji urzÄ…dzeÅ„
 
-6. Serwer zajmuje siê: 
-	a. Udostêpnianiem zasobów
-	b. Wyœwietlaniem obrazu
+6. Serwer zajmuje siÄ™: 
+	> a. UdostÄ™pnianiem zasobÃ³w
+	b. WyÅ›wietlaniem obrazu
 	c. Drukowaniem
 	d. Kopaniem BTC
 
 7. Czym jest klient?
-	a. Przyjmuje informacje z serwera
+	> a. Przyjmuje informacje z serwera
 	b. Dostarcza zasoby
-	c. Wysy³a informacje do hosta
-	d. Jest spisem protoko³ów
+	c. WysyÅ‚a informacje do hosta
+	d. Jest spisem protokoÅ‚Ã³w
 
-8. Czym siê charakteryzujê sieæ P2P?
-	a. Brakiem serwera
+8. Czym siÄ™ charakteryzujÄ™ sieÄ‡ P2P?
+	> a. Brakiem serwera
 	b. Posiadaniem serwera
 	c. Punktem centralny
-	d. Kszta³tem pierœcienia
+	d. KsztaÅ‚tem pierÅ›cienia
 
-9. Do czego s³u¿y serwer DNS?
-	a. Do t³umaczenia nazw domen
-	b. Do udostêpniania zasobów
-	c. Do Przesy³ania danych
-	d. Do t³umaczenia IP
+9. Do czego sÅ‚uÅ¼y serwer DNS?
+	> a. Do tÅ‚umaczenia nazw domen
+	b. Do udostÄ™pniania zasobÃ³w
+	c. Do PrzesyÅ‚ania danych
+	d. Do tÅ‚umaczenia IP
  
 10. Co to jest serwer DHCP?
-	a. Wysy³a IP 
-	b. Wysy³a dokument
+	> a. WysyÅ‚a IP 
+	b. WysyÅ‚a dokument
 	c. Przetwarza informacje
 	d. Przetwarza IP
 
 11. Na co pozwala serwer pocztowy?
-	a. Na wysy³anie wiadomoœci 
-	b. Przetwarzanie ¿¹dañ HTTP
-	c. Wykonywanie trudnych obliczeñ
+	> a. Na wysyÅ‚anie wiadomoÅ›ci 
+	b. Przetwarzanie Å¼Ä…daÅ„ HTTP
+	c. Wykonywanie trudnych obliczeÅ„
 	d. Przechowywanie danych
 
-12. Jaki jest domyœlny port serwera us³ugi WWW?
-	a. 80
+12. Jaki jest domyÅ›lny port serwera usÅ‚ugi WWW?
+	> a. 80
 	b. 8080
 	c. 8081
 	d. 800
 
-13. Zestaw regu³ definiuj¹cych sposób przesy³ania informacji w sieci opisuje
-	a. Protokó³
+13. Zestaw reguÅ‚ definiujÄ…cych sposÃ³b przesyÅ‚ania informacji w sieci opisuje
+	> a. ProtokÃ³Å‚
 	b. Zasada
-	c. Regu³a
+	c. ReguÅ‚a
 	d. Standard
 
 14. Jaki adres IP odpowiada nazwie mnemonicznej localhost?
-	a. 127.0.0.1
+	> a. 127.0.0.1
 	b. 192.168.1.255
 	c. 192.168.1.0
 	d. 192.168.1.1
 
-15. Który protokó³ zapewnia szyfrowane po³¹czenia?
-	a. SSH
+15. KtÃ³ry protokÃ³Å‚ zapewnia szyfrowane poÅ‚Ä…czenia?
+	> a. SSH
 	b. TELNET
 	c. DHCP
 	d. DNS	
 
-16. Który z protoko³ów jest stosowany w telefonii internetowej?
-	a. SIP
+16. KtÃ³ry z protokoÅ‚Ã³w jest stosowany w telefonii internetowej?
+	> a. SIP
 	b. FTP
 	c. NetBEUI
 	d. HTTP
 
-17. Do zdalnego zarz¹dzania stacjami roboczymi nie jest stosowany
-	a. Program Wireshark
+17. Do zdalnego zarzÄ…dzania stacjami roboczymi nie jest stosowany
+	> a. Program Wireshark
 	b. Pulpit zdalny
 	c. program UltraVNC
 	d. program TeamViewer
 
-18. Na czym polega ró¿nica pomiêdzy serwerem WWW a FTP?
-	a. WWW jest szybszy
+18. Na czym polega rÃ³Å¼nica pomiÄ™dzy serwerem WWW a FTP?
+	> a. WWW jest szybszy
 	b. FTP jest szybszy
 	c. WWW jest tak samo szybki
-	d. FTP posiada równoleg³e pobieranie
+	d. FTP posiada rÃ³wnolegÅ‚e pobieranie
  
-19. PAN ma zasiêg: 
-	a. Lokalny
+19. PAN ma zasiÄ™g: 
+	> a. Lokalny
 	b. Krajowy
 	c. Globalny
-	d. Miêdzynarodowy
+	d. MiÄ™dzynarodowy
 
 20. Topologie fizyczne sieci to m.in.  
-	a. Magistrala i gwiazda
-	b. Okrêtka i skrêtka
-	c. Obwód i obrys
-	d. Obwódka i obrys
+	> a. Magistrala i gwiazda
+	b. OkrÄ™tka i skrÄ™tka
+	c. ObwÃ³d i obrys
+	d. ObwÃ³dka i obrys
 
 21. Topologia logiczna sieci to m. in.
-	a. Punkt-punkt
+	> a. Punkt-punkt
 	b. Przekazywanie monety
-	c. Jednodostêpowa
-	d. Równoleg³a
+	c. JednodostÄ™powa
+	d. RÃ³wnolegÅ‚a
 
 22. Media sieciowe dzielimy na:
-	a. Przewodowe i bezprzewodowe
-	b. Skrêtki i œwiat³owody
+	> a. Przewodowe i bezprzewodowe
+	b. SkrÄ™tki i Å›wiatÅ‚owody
 	c. LAN i WAN
 	d. LAN i MAN
 
-23. Jak¹ jednostkê danych stosujemy w sieciach
-	a. b/s
+23. JakÄ… jednostkÄ™ danych stosujemy w sieciach
+	> a. b/s
 	b. B/s
 	c. KiB/s
 	d. MB/s
 
 24. Jaka jest komenda na sprawdzenie pingu w CMD?
-	a. Ping [adres]
+	> a. Ping [adres]
 	b. Ipconfig [adres]
 	c. Net view [adres]
 	d. Display ping [adres]
 
-25. Jakie informacje wyœwietla komenda ipconfig /all?
-	a. Pe³na konfiguracja TCP/IP
-	b. Zawartoœæ pamiêci podrêcznej
+25. Jakie informacje wyÅ›wietla komenda ipconfig /all?
+	> a. PeÅ‚na konfiguracja TCP/IP
+	b. ZawartoÅ›Ä‡ pamiÄ™ci podrÄ™cznej
 	c. Identyfikator klasy DHCP
-	d. Wysy³a komunikat DHCP
+	d. WysyÅ‚a komunikat DHCP
 
-26. Jakie zak³ócenie mo¿e wyst¹piæ w kablu?
-	a. Przes³uch
-	b. Pos³uch
-	c. Przes³uch
+26. Jakie zakÅ‚Ã³cenie moÅ¼e wystÄ…piÄ‡ w kablu?
+	> a. PrzesÅ‚uch
+	b. PosÅ‚uch
+	c. PrzesÅ‚uch
 	d. Echo
 
 27. Sieci w standardzie Ethernet do 100 Mbit/s.
-	a. Ethernet 
+	> a. Ethernet 
 	b. Fast Ethernet
 	c. Faster Ethernet
 	d. Gigabit Ethernet
  
-28. Narzêdzia zaciskaj¹ce z³¹czki na koñcach przewodów.
-	a. Zaciskarka
-	b. Œciagacz
+28. NarzÄ™dzia zaciskajÄ…ce zÅ‚Ä…czki na koÅ„cach przewodÃ³w.
+	> a. Zaciskarka
+	b. Åšciagacz
 	c. Obcinacz
 	d. Obrabiarka
 
 29. Co chroni nas przed zwarciem?
-	a. Wy³¹cznik nadmiarowo-pr¹dowy
-	b. Wy³¹cznik wra¿liwy 
-	c. Wy³¹cznik przepiêciowy
-	d. Wy³¹cznik ró¿nicowopr¹dowy
+	> a. WyÅ‚Ä…cznik nadmiarowo-prÄ…dowy
+	b. WyÅ‚Ä…cznik wraÅ¼liwy 
+	c. WyÅ‚Ä…cznik przepiÄ™ciowy
+	d. WyÅ‚Ä…cznik rÃ³Å¼nicowoprÄ…dowy
 
-	30. Narzêdzia do uderzeniowe do terminali LSA
-	a. Nó¿ krosowniczy
+30. NarzÄ™dzia do uderzeniowe do terminali LSA
+	> a. NÃ³Å¼ krosowniczy
 	b. Przyciskarka
 	c. Przeciskarka
-	d. Narzêdzie uniwersalne
+	d. NarzÄ™dzie uniwersalne
 
-31. Typ okablowania w du¿ych sieciach
-	a. Kampusowe
+31. Typ okablowania w duÅ¼ych sieciach
+	> a. Kampusowe
 	b. Pionowe
 	c. Poziome
-	d. Piêtrowe
+	d. PiÄ™trowe
 
-32. Metoda wytwarzania jakiegoœ dobra
-	a. Technologia 
-	b. Przemys³
+32. Metoda wytwarzania jakiegoÅ› dobra
+	> a. Technologia 
+	b. PrzemysÅ‚
 	c. Produkcja
 	d. Industrializacja
 
-33. Karta która przekszta³ca pakiety danych w sygna³y.
-	a. Karta sieciowa
+33. Karta ktÃ³ra przeksztaÅ‚ca pakiety danych w sygnaÅ‚y.
+	> a. Karta sieciowa
 	b. Karta Ethernet
 	c. Karta Wi-Fi
-	d. Karta transferuj¹ca
+	d. Karta transferujÄ…ca
 
-34. Kolor ostatniej ¿y³ki w skrêtce typu B
-	a. Br¹zowy
+34. Kolor ostatniej Å¼yÅ‚ki w skrÄ™tce typu B
+	> a. BrÄ…zowy
 	b. Niebieski
 	c. Zielony
-	d. Pomarañczowy
+	d. PomaraÅ„czowy
 
-35. Kolor drugiej ¿y³ki w skrêtce typu A
-	a. Zielony
+35. Kolor drugiej Å¼yÅ‚ki w skrÄ™tce typu A
+	> a. Zielony
 	b. Niebieski
-	c. Br¹zowy
-	d. Pomarañczowy
+	c. BrÄ…zowy
+	d. PomaraÅ„czowy
 
-36. Rodzaj przewodu s³u¿¹cego do przesy³ania informacji
-	a. Skrêtka
-	b. Okrêtka
+36. Rodzaj przewodu sÅ‚uÅ¼Ä…cego do przesyÅ‚ania informacji
+	> a. SkrÄ™tka
+	b. OkrÄ™tka
 	c. Owijka
-	d. Skrêtki
+	d. SkrÄ™tki
  
-37. Jak¹ d³ugoœæ ma IPv4?
-	a. 32 bity
+37. JakÄ… dÅ‚ugoÅ›Ä‡ ma IPv4?
+	> a. 32 bity
 	b. 64 bity
-	c. 16 bitów
-	d. 8 bitów
+	c. 16 bitÃ³w
+	d. 8 bitÃ³w
 
-38. Pojêcie skrêtka nieekranowa dotyczy skrótu:
-	a. UTP
+38. PojÄ™cie skrÄ™tka nieekranowa dotyczy skrÃ³tu:
+	> a. UTP
 	b. ETP
 	c. IOT
 	d. IOP
 
-39. Przysz³oœciowa sieæ w standardzie Ethernet
-	a. 10 gigabit 
+39. PrzyszÅ‚oÅ›ciowa sieÄ‡ w standardzie Ethernet
+	> a. 10 gigabit 
 	b. 50 gigabit
 	c. 1 gigabit
 	d. 100 gigabit
 
-40. Skrêtka kat. 6 ma zasiêg:
-	a. 100 metrów
-	b. 50 metrów
-	c. 150 metrów 
-	d. 80 metrów
+40. SkrÄ™tka kat. 6 ma zasiÄ™g:
+	> a. 100 metrÃ³w
+	b. 50 metrÃ³w
+	c. 150 metrÃ³w 
+	d. 80 metrÃ³w
 
 41. Kabel FTP to
-	a. Kabel foliowany
+	> a. Kabel foliowany
 	b. Kabel niefoliowany
 	c. Kabel z uziemieniem
 	d. Kabel z oplotem
 
 42. Podstawa systemu binarnego to:
-	a. 2 
+	> a. 2 
 	b. 10
 	c. 16
 	d. 1
 
-43. Skrêtka UTP sk³ada siê z 
-	a. czterech par
-	b. dwóch par
-	c. oœmiu par
-	d. szeœciu par
+43. SkrÄ™tka UTP skÅ‚ada siÄ™ z 
+	> a. czterech par
+	b. dwÃ³ch par
+	c. oÅ›miu par
+	d. szeÅ›ciu par
 
-44. IPv6 ma d³ugoœæ
-	a. 128 bitów
-	b. 64 bitów
-	c. 256 bitów
-	d. 32 bitów
+44. IPv6 ma dÅ‚ugoÅ›Ä‡
+	> a. 128 bitÃ³w
+	b. 64 bitÃ³w
+	c. 256 bitÃ³w
+	d. 32 bitÃ³w
 
-45. Jak¹ d³ugoœæ ma adres MAC?
-	a. 48 bity
+45. JakÄ… dÅ‚ugoÅ›Ä‡ ma adres MAC?
+	> a. 48 bity
 	b. 32 bity
 	c. 64 bity
 	d. 54 bity
  
-46. NAT t³umaczy adresy
-	a. Prywatne na publiczne
+46. NAT tÅ‚umaczy adresy
+	> a. Prywatne na publiczne
 	b. Publiczne na prywatne 
-	c. Lokalne na ogólne
-	d. Ogólne na lokalne
+	c. Lokalne na ogÃ³lne
+	d. OgÃ³lne na lokalne
 
-47. Urz¹dzenie sieciowe to m. in.
-	a. Koncentrator 
+47. UrzÄ…dzenie sieciowe to m. in.
+	> a. Koncentrator 
 	b. Kompensator
 	c. Kontener
 	d. Kondensator
 
 48. Ile mamy klas adresu IPv4?
-	a. 5
+	> a. 5
 	b. 4
 	c. 3
 	d. 6
 
-49. Zapora internetowa s³u¿y do:
-	a. Filtrowania ruchu
+49. Zapora internetowa sÅ‚uÅ¼y do:
+	> a. Filtrowania ruchu
 	b. Filtrowania danych
-	c. Wyszukiwania adresów IP
+	c. Wyszukiwania adresÃ³w IP
 	d. Sprawdzania informacji
 
-50. Który protokó³ jest wykorzystywany prze polecenie ping?
-	a. ICMP
+50. KtÃ³ry protokÃ³Å‚ jest wykorzystywany prze polecenie ping?
+	> a. ICMP
 	b. IPX
 	c. FTP
 	d. SMTP
