@@ -223,7 +223,7 @@ const questions = new Array(question1, question2, question3, question4, question
     question46, question46, question47, question48, question50
 );
 
-let randomNumbers = new Array();
+let randomQuestions = new Array();
 
 for (let i = 0; i < 10; i++) {
     let nextNumber = true
