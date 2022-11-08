@@ -212,37 +212,30 @@ const question49 = {
 };
 const question50 = {
     question: "Który protokół jest wykorzystywany prze polecenie ping?",
-    options: ["ICMP","IPX","FTP","SMTP"
-    ]
+    options: ["ICMP","IPX","FTP","SMTP"]
 };
 
-const questions = [question1, question2, question3, question4, question5, question6, question7, question8, question9,
+const questions = new Array(question1, question2, question3, question4, question5, question6, question7, question8, question9,
     question10, question11, question12, question13, question14, question15, question16, question17, question18,
     question19, question20, question21, question22, question23, question24, question25, question26, question27,
     question28, question29, question30, question31, question32, question33, question34, question35, question36,
     question37, question38, question39, question40, question41, question42, question43, question44, question45,
     question46, question46, question47, question48, question50
-    ];
+);
 
-let randomNumbers = [];
+let randomNumbers = new Array();
 
 for (let i = 0; i < 10; i++) {
-    let nextNumber = true;
-    let number;
+    let nextNumber = true
+    let number = 0;
     do {
-        nextNumber = true
-        number = Math.round(Math.random() * 10);
-
+        nextNumber = false
+        number = Math.round(Math.random() * 9);
         for (let a = 0; a < i; a++) {
             if (number == randomNumbers[a]) {
-                nextNumber = false;
+                nextNumber = true;
             }
         }
-    } while (nextNumber == false);
-    
-    randomNumbers[i] += number; 
-}
-
-for (let i = 0; i < 10; i++) {
-    console.log(randomNumbers[i])
+    } while (nextNumber == true);
+    randomNumbers.push(number);
 }
