@@ -14,15 +14,17 @@ function prevAndNext() {
   document.getElementById(
     "quest"
   ).textContent = `Lorem ipsum dolor sit amet? ${questNumb}`;
+  checkPrevBtn();
 }
 
 function checkPrevBtn() {
-  if (questNumb >= 0) {
-    prevBtn.style.display = "block";
-    btnwrap.style.display = "block";
-  }
   if (questNumb >= 1) {
     prevBtn.removeAttribute("disabled");
+    prevBtn.style.display = "block";
+  }
+  if (questNumb == 1) {
+    prevBtn.style.display = "none";
+    btnwrap.style.display = "block";
   }
   nextBtn.style.width = "40vw";
   // if(questNumb == 1)
@@ -30,7 +32,6 @@ function checkPrevBtn() {
 }
 nextBtn.addEventListener("click", () => {
   //NEXT
-  checkPrevBtn();
   if (questNumb == 0) nextBtn.setAttribute("value", "Next");
   if (questNumb < 5) {
     //5 to ilość pytań (domyślnie ma być 10)
@@ -41,7 +42,6 @@ nextBtn.addEventListener("click", () => {
 });
 prevBtn.addEventListener("click", () => {
   //PREV
-  checkPrevBtn();
   if (questNumb > 1) {
     document.getElementsByTagName("ul")[0].textContent = "";
     questNumb--;
