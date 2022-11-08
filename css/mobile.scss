@@ -1,5 +1,7 @@
-$bg-primary: #6f53ff;
-$bg-secondary: #0c066a;
+$bg-primary: #7a65e4;
+$bg-secondary: #20197c;
+$bg-tertiary: #9c94ff;
+$header: #6b61f8;
 $text-primary: rgb(236, 236, 236);
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
@@ -11,28 +13,40 @@ body {
         display: none;
     }
 
+    header {
+        background: $header;
+        height: 8vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     hr {
-        border: $bg-secondary solid 2px;
+        margin: 0;
+        border: $bg-secondary solid 1px;
     }
 
 
-    background: radial-gradient(#6f53ff, #534ae9);
-    background-size: cover;
+    background: linear-gradient(-45deg, $bg-primary, $bg-secondary, $bg-tertiary);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        height: 100%;
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
     //background-image: url(background-temp.svg);
-
     #myform {
         display: grid;
         justify-content: center;
     }
 
     #btn {
-        background: #836aff;
+        background: linear-gradient(90deg ,$bg-primary, $header);
         border-radius: 40px;
         box-shadow: 3px 3px 0px $bg-secondary;
         border: solid 5px $bg-secondary;
         color: $text-primary;
-        font-size: 2rem;
+        font-size: 5vw;
         text-transform: uppercase;
         font-variant: small-caps;
         width: 70vw;
@@ -51,6 +65,7 @@ body {
         color: $text-primary;
         text-align: center;
         text-transform: uppercase;
+        margin: 0;
     }
 
     #quest {
@@ -65,12 +80,12 @@ body {
         border: solid 2px $bg-primary;
         border-radius: 20px;
         width: 70vw;
-        height: 6vh;
+        height: 8vh;
         transition: 200ms ease-in-out;
         text-transform: uppercase;
         font-variant: small-caps;
         font-weight: bolder;
-        font-size: 2rem;
+        font-size: 5vw;
 
         &:active {
             background: $bg-primary;
@@ -85,12 +100,12 @@ body {
             border: solid 2px $bg-primary;
             border-radius: 20px;
             width: 40vw;
-            height: 6vh;
+            height: 8vh;
             transition: 200ms ease-in-out;
             text-transform: uppercase;
             font-variant: small-caps;
             font-weight: bolder;
-            font-size: 2rem;
+            font-size: 5vw;
     
         &:active {
                 background: $bg-primary;
@@ -103,7 +118,7 @@ body {
     .start-prev-wrapper {
         display: flex;
         justify-content: space-evenly;
-        margin-top: 20%;
+        margin-top: 25vw;
     }
 
 
@@ -111,10 +126,25 @@ body {
         list-style-type: none;
         color: $text-primary;
         font-size: 2REM;
-        text-align: center;
-
     }
 
+    #quest {
+        font-family: 'Roboto', sans-serif;
+        font-size: 5vw;
+    }
     }
 
+    
+    
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
     
