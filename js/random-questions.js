@@ -1,44 +1,44 @@
-const question1 = {
+const question01 = {
     question: "Jakie urządzenia mają adres MAC?",
     options: ["Sprzęt sieciowy", "Każde urządzenie", "Peryferia", "Procesory"]
 };
 
-const question2 = {
+const question02 = {
     question: "Co to jest numer IP?",
     options: ["Ciąg liter i cyfr", "Lista urządzeń w sieci", "Maska podsieci", "Geolokalizacja urządzenia"]
 };
 
-const question3 = {
+const question03 = {
     question: "Jakie mamy klasy numerów IP?",
     options: ["A, B, C", "Low, Medium, High", "1, 2, 3", "Base, Medium, Full"]
 };
 
-const question4 = {
+const question04 = {
     question: "Do czego służy maska podsieci?",
     options: ["Znalezienie hosta w IP", "Znalezienie sieci w IP", "Znalezienie IP", "Znalezienie adresu MAC"]
 };
 
-const question5 = {
+const question05 = {
     question: "Do czego służy nam protokół TCP/IP?",
     options: ["Ujednolica przesyłane pakiety", "Przesyła pakiety", "Szyfruję pakiety", "Identyfikacji urządzeń"]
 };
 
-const question6 = {
+const question06 = {
     question: "Serwer zajmuje się:",
     options: ["Udostępnianiem zasobów", "Wyświetlaniem obrazu", "Drukowaniem", "Kopaniem BTC"]
 };
 
-const question7 = {
+const question07 = {
     question: "Czym jest klient?",
     options: ["Przyjmuje informacje z serwera", "Dostarcza zasoby", "Wysyła informacje do hosta", "Jest spisem protokołów"]
 };
 
-const question8 = {
+const question08 = {
     question: "Czym się charakteryzuję sieć P2P?",
     options: ["Brakiem serwera","Posiadaniem serwera","Punktem centralny","Kształtem pierścienia"]
 };
 
-const question9 = {
+const question09 = {
     question: "Do czego służy serwer DNS?",
     options: ["Do tłumaczenia nazw domen","Do udostępniania zasobów","Do Przesyłania danych","Do tłumaczenia IP"]
 };
@@ -215,13 +215,16 @@ const question50 = {
     options: ["ICMP","IPX","FTP","SMTP"]
 };
 
-const questions = new Array(question1, question2, question3, question4, question5, question6, question7, question8, question9,
+const questions = new Array(
+    question01, question02, question03, question04, question05, question06, question07, question08, question09,
     question10, question11, question12, question13, question14, question15, question16, question17, question18,
     question19, question20, question21, question22, question23, question24, question25, question26, question27,
     question28, question29, question30, question31, question32, question33, question34, question35, question36,
     question37, question38, question39, question40, question41, question42, question43, question44, question45,
     question46, question46, question47, question48, question50
 );
+
+function 
 
 let randomQuestions = new Array();
 
@@ -238,4 +241,11 @@ for (let i = 0; i < 10; i++) {
         }
     } while (nextNumber == true);
     randomNumbers.push(number);
+}
+
+for (let i = 0; i < 10; i++) {
+    let order = new Array();
+    for (let a = 0; a < 4; a++) {
+        
+    }
 }
