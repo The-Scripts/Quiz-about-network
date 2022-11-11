@@ -229,8 +229,6 @@ function randomizeNumbers(howMany, ceiling) {
     let nextNumber = true;
     let number = 0;
     for (let i = 0; i < howMany; i++) {
-        nextNumber;
-        number = 0;
         do {
             nextNumber = false
             number = Math.round(Math.random() * (ceiling - 1));
