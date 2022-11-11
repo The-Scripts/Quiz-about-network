@@ -224,28 +224,41 @@ const questions = new Array(
     question46, question46, question47, question48, question50
 );
 
-function 
-
-let randomQuestions = new Array();
-
-for (let i = 0; i < 10; i++) {
-    let nextNumber = true
+function randomizeNumbers(howMany, ceiling) {
+    let randomNumbers = [];
+    let nextNumber = true;
     let number = 0;
-    do {
-        nextNumber = false
-        number = Math.round(Math.random() * 9);
-        for (let a = 0; a < i; a++) {
-            if (number == randomNumbers[a]) {
-                nextNumber = true;
+    for (let i = 0; i < howMany; i++) {
+        nextNumber;
+        number = 0;
+        do {
+            nextNumber = false
+            number = Math.round(Math.random() * (ceiling - 1));
+            for (let a = 0; a < i; a++) {
+                if (number == randomNumbers[a]) {
+                    nextNumber = true;
+                    break;
+                }
+                
             }
-        }
-    } while (nextNumber == true);
-    randomNumbers.push(number);
+        } while (nextNumber == true);
+        randomNumbers.push(number);
+    }
+
+    return randomNumbers;
+}
+
+
+let randomQuestions = new Array(10);
+let order = new Array(4);
+
+for (let i = 0; i < 10; i++) {
+    randomQuestions[i] = questions[randomizeNumbers(1, 50)];
 }
 
 for (let i = 0; i < 10; i++) {
-    let order = new Array();
-    for (let a = 0; a < 4; a++) {
-        
-    }
+    randomQuestions[i].answersOrder = randomizeNumbers(4, 4);
 }
+
+console.log(randomQuestions);
+
