@@ -1,26 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 body {
-  background: radial-gradient(#6f53ff, #534ae9);
-  background-size: cover;
+  background: linear-gradient(-45deg, #7a65e4, #20197c, #9c94ff);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 15s ease infinite;
+          animation: gradient 15s ease infinite;
+  height: 100%;
   font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 body #buttons-wrapper {
   display: none;
 }
+body header {
+  background: #6b61f8;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 body hr {
-  border: #0c066a solid 2px;
+  margin: 0;
+  border: #20197c solid 1px;
 }
 body #myform {
   display: grid;
   justify-content: center;
 }
 body #btn {
-  background: #836aff;
+  background: linear-gradient(90deg, #7a65e4, #6b61f8);
   border-radius: 40px;
-  box-shadow: 3px 3px 0px #0c066a;
-  border: solid 5px #0c066a;
+  box-shadow: 3px 3px 0px #20197c;
+  border: solid 5px #20197c;
   color: rgb(236, 236, 236);
-  font-size: 2rem;
+  font-size: 5vw;
   text-transform: uppercase;
   font-variant: small-caps;
   width: 70vw;
@@ -30,13 +43,14 @@ body #btn {
   font-weight: bold;
 }
 body #btn:active {
-  background: #0c066a;
+  background: #20197c;
   box-shadow: none;
 }
 body h1 {
   color: rgb(236, 236, 236);
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
 }
 body #quest {
   color: rgb(236, 236, 236);
@@ -44,39 +58,39 @@ body #quest {
   font-size: 1.5rem;
 }
 body #next {
-  color: #0c066a;
-  box-shadow: 1px 1px 0px #0c066a;
-  border: solid 2px #6f53ff;
+  color: #20197c;
+  box-shadow: 1px 1px 0px #20197c;
+  border: solid 2px #7a65e4;
   border-radius: 20px;
   width: 70vw;
-  height: 6vh;
+  height: 8vh;
   transition: 200ms ease-in-out;
   text-transform: uppercase;
   font-variant: small-caps;
   font-weight: bolder;
-  font-size: 2rem;
+  font-size: 5vw;
 }
 body #next:active {
-  background: #6f53ff;
+  background: #7a65e4;
   box-shadow: none;
   color: rgb(236, 236, 236);
   border: none;
 }
 body #prev {
-  color: #0c066a;
-  box-shadow: 1px 1px 0px #0c066a;
-  border: solid 2px #6f53ff;
+  color: #20197c;
+  box-shadow: 1px 1px 0px #20197c;
+  border: solid 2px #7a65e4;
   border-radius: 20px;
   width: 40vw;
-  height: 6vh;
+  height: 8vh;
   transition: 200ms ease-in-out;
   text-transform: uppercase;
   font-variant: small-caps;
   font-weight: bolder;
-  font-size: 2rem;
+  font-size: 5vw;
 }
 body #prev:active {
-  background: #6f53ff;
+  background: #7a65e4;
   box-shadow: none;
   color: rgb(236, 236, 236);
   border: none;
@@ -84,11 +98,38 @@ body #prev:active {
 body .start-prev-wrapper {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 20%;
+  margin-top: 25vw;
 }
 body ul {
   list-style-type: none;
   color: rgb(236, 236, 236);
   font-size: 2REM;
-  text-align: center;
+}
+body #quest {
+  font-family: "Roboto", sans-serif;
+  font-size: 5vw;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }/*# sourceMappingURL=mobile.css.map */
