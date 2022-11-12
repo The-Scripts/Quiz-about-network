@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+#imp{ /*Powiadomienie widoczne tylko na mobilce (tymczasowo)!!*/
+  display: none;;
+}
 body {
   background: linear-gradient(-45deg, #7a65e4, #20197c, #9c94ff);
   background-size: 400% 400%;
