@@ -1,19 +1,30 @@
 const nextBtn = document.getElementById("next");
 const prevBtn = document.getElementById("prev");
 const btnwrap = document.getElementById("buttons-wrapper");
+const header = document.getElementById("header");
+const quest = document.getElementById("quest");
+
+let answerButtons = new Array(
+  document.getElementById("answer1"),
+  document.getElementById("answer2"),
+  document.getElementById("answer3"),
+  document.getElementById("answer4")
+);
+
 let questNumb = 0;
 
-//czas do zrobienia
+// TODO: Time limit
 
 function prevAndNext() {
-  console.log(questNumb);
-  document.getElementsByTagName("h1")[0].textContent = `Pytanie ${questNumb}`;
-  document.getElementById(
-    "quest"
-  ).textContent = `Lorem ipsum dolor sit amet? ${questNumb}`;
+  header.textContent = `Pytanie ${questNumb}`;
+  quest.textContent = randomQuestions[questNumb-1].question;
+  for (let i = 0; i < 4; i++) {
+    answerButtons[i].value = randomQuestions[questNumb-1].answerOrder[i];
+  }
   checkPrevBtn();
 }
 
+// Removing prev button
 function checkPrevBtn() {
   if (questNumb >= 1) {
     prevBtn.removeAttribute("disabled");
@@ -25,17 +36,19 @@ function checkPrevBtn() {
   }
   nextBtn.style.width = "40vw";
 }
+
+// Next
 nextBtn.addEventListener("click", () => {
-  //NEXT
   if (questNumb == 0) nextBtn.setAttribute("value", "Next");
-  if (questNumb < 10) { //10 to ilość pytań
-    document.getElementsByTagName("ul")[0].textContent = " "; //usuwa zasady
+  if (questNumb < 10) { // amount of questions
+    document.getElementsByTagName("ul")[0].textContent = " "; // deleting principles
     questNumb++;
     prevAndNext();
   }
 });
+
+// Prev
 prevBtn.addEventListener("click", () => {
-  //PREV
   if (questNumb > 1) {
     document.getElementsByTagName("ul")[0].textContent = "";
     questNumb--;

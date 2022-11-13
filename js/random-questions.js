@@ -96,7 +96,7 @@ const question22 = {
 };
 const question23 = {
     question: "Jaką jednostkę danych stosujemy w sieciach",
-    options: ["b/s","B/s","KiB/s","MB/s"]
+    options: ["bit/s","Bajt/s","KiB/s","MB/s"]
 };
 const question24 = {
     question: "Jaka jest komenda na sprawdzenie pingu w CMD?",
@@ -108,14 +108,14 @@ const question25 = {
 };
 const question26 = {
     question: "Jakie zakłócenie może wystąpić w kablu?",
-    options: ["Przesłuch","Posłuch","Przesłuch","Echo"]
+    options: ["Przesłuch","Posłuch","Podsłuch","Echo"]
 };
 const question27 = {
     question: "Sieci w standardzie Ethernet do 100 Mbit/s.",
     options: ["Ethernet" ,"Fast Ethernet","Faster Ethernet","Gigabit Ethernet"]
 };
 const question28 = {
-    question: "Narzędzia zaciskające złączki na końcach przewodów.",
+    question: "Narzędzie zaciskające złączki na końcach przewodów.",
     options: ["Zaciskarka","Ściagacz","Obcinacz","Obrabiarka"]
 };
 const question29 = {
@@ -123,7 +123,7 @@ const question29 = {
     options: ["Wyłącznik nadmiarowo-prądowy","Wyłącznik wrażliwy","Wyłącznik przepięciowy","Wyłącznik różnicowoprądowy"]
 };
 const question30 = {
-    question: "Narzędzia do uderzeniowe do terminali LSA",
+    question: "Narzędzie uderzeniowe do terminali LSA",
     options: ["Nóż krosowniczy","Przyciskarka","Przeciskarka","Narzędzie uniwersalne"
     ]
 };
@@ -249,14 +249,19 @@ function randomizeNumbers(howMany, ceiling) {
 
 let randomQuestions = new Array(10);
 let order = new Array(4);
+let randomNumbersForQuestions = new Array(10);
+let randomNumbersForOrder = new Array(4);
+
+randomNumbersForQuestions = randomizeNumbers(10, 50);
 
 for (let i = 0; i < 10; i++) {
-    randomQuestions[i] = questions[randomizeNumbers(1, 50)];
+    randomQuestions[i] = questions[randomNumbersForQuestions[i]];
 }
 
 for (let i = 0; i < 10; i++) {
-    randomQuestions[i].answersOrder = randomizeNumbers(4, 4);
+    randomNumbersForOrder = randomizeNumbers(4, 4);
+    randomQuestions[i].answerOrder = [0, 1, 2, 3];
+    for (let a = 0; a < 4; a++) {
+        randomQuestions[i].answerOrder[a] = randomQuestions[i].options[randomNumbersForOrder[a]];
+    }
 }
-
-console.log(randomQuestions);
-
