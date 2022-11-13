@@ -30,7 +30,7 @@ body #myform {
   display: grid;
   justify-content: center;
 }
-body #btn {
+body .btn {
   background: linear-gradient(90deg, #7a65e4, #6b61f8);
   border-radius: 40px;
   box-shadow: 3px 3px 0px #20197c;
@@ -45,7 +45,7 @@ body #btn {
   transition: 200ms ease-in-out;
   font-weight: bold;
 }
-body #btn:active {
+body .btn:active {
   background: #20197c;
   box-shadow: none;
 }
