@@ -115,7 +115,7 @@ const question27 = {
     options: ["Ethernet" ,"Fast Ethernet","Faster Ethernet","Gigabit Ethernet"]
 };
 const question28 = {
-    question: "Narzędzia zaciskające złączki na końcach przewodów.",
+    question: "Narzędzie zaciskające złączki na końcach przewodów.",
     options: ["Zaciskarka","Ściagacz","Obcinacz","Obrabiarka"]
 };
 const question29 = {
@@ -123,7 +123,7 @@ const question29 = {
     options: ["Wyłącznik nadmiarowo-prądowy","Wyłącznik wrażliwy","Wyłącznik przepięciowy","Wyłącznik różnicowoprądowy"]
 };
 const question30 = {
-    question: "Narzędzia do uderzeniowe do terminali LSA",
+    question: "Narzędzie uderzeniowe do terminali LSA",
     options: ["Nóż krosowniczy","Przyciskarka","Przeciskarka","Narzędzie uniwersalne"
     ]
 };
@@ -249,14 +249,14 @@ function randomizeNumbers(howMany, ceiling) {
 
 let randomQuestions = new Array(10);
 let order = new Array(4);
+let randomNumbersForQuestions = new Array(10);
+
+randomNumbersForQuestions = randomizeNumbers(10, 50);
 
 for (let i = 0; i < 10; i++) {
-    randomQuestions[i] = questions[randomizeNumbers(1, 50)];
+    randomQuestions[i] = questions[randomNumbersForQuestions[i]];
 }
 
 for (let i = 0; i < 10; i++) {
     randomQuestions[i].answersOrder = randomizeNumbers(4, 4);
 }
-
-console.log(randomQuestions);
-
