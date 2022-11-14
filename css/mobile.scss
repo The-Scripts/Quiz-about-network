@@ -1,5 +1,5 @@
 $bg-primary: #7a65e4;
-$bg-secondary: #20197c;
+$bg-secondary: #3c34a8;
 $bg-tertiary: #9c94ff;
 $header: #6b61f8;
 $text-primary: rgb(236, 236, 236);
@@ -17,12 +17,14 @@ body {
         display: none;
     }
 
-    header {
+    #header {
         background: $header;
         height: 8vh;
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size:3em;
+        background-blend-mode: soft-light;
     }
 
     hr {
@@ -31,10 +33,10 @@ body {
     }
 
 
-    background: linear-gradient(-45deg, $bg-primary, $bg-secondary, $bg-tertiary);
-        background-size: 400% 400%;
+    background: radial-gradient($bg-primary, $bg-secondary, $bg-tertiary);
+        background-size: 600% 600%;
         animation: gradient 15s ease infinite;
-        height: 100%;
+        height: max(100%)-2%;
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
@@ -50,22 +52,22 @@ body {
         box-shadow: 3px 3px 0px $bg-secondary;
         border: solid 5px $bg-secondary;
         color: $text-primary;
-        font-size: 5vw;
+        font-size: 4vw;
         text-transform: uppercase;
         font-variant: small-caps;
-        width: 70vw;
+        width: 90vw;
         height: 80%;
         margin-top: 20%;
         transition: 200ms ease-in-out;
         font-weight: bold;
-
+        word-wrap: break-word;
         &:active {
             background: $bg-secondary;
             box-shadow: none;
         }
     }
 
-    h1 {
+    #header {
         color: $text-primary;
         text-align: center;
         text-transform: uppercase;
@@ -144,9 +146,13 @@ body {
         0% {
             background-position: 0% 50%;
         }
-        50% {
-            background-position: 100% 50%;
+        33% {
+            background-position: 30% 50%;
         }
+        66% {
+            background-position: -40% 50%;
+        }
+
         100% {
             background-position: 0% 50%;
         }
