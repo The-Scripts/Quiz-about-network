@@ -14,6 +14,7 @@ body #imp {
 }
 body #buttons-wrapper {
   display: none;
+  height: 50vh;
 }
 body #header {
   background: #6b61f8;
@@ -29,8 +30,11 @@ body hr {
   border: #3c34a8 solid 1px;
 }
 body #myform {
-  display: grid;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
 }
 body .btn {
   background: linear-gradient(90deg, #7a65e4, #6b61f8);
@@ -42,8 +46,7 @@ body .btn {
   text-transform: uppercase;
   font-variant: small-caps;
   width: 90vw;
-  height: 80%;
-  margin-top: 20%;
+  height: 20%;
   transition: 200ms ease-in-out;
   font-weight: bold;
   word-wrap: break-word;
@@ -104,7 +107,7 @@ body #prev:active {
 body .start-prev-wrapper {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 25vw;
+  margin-top: 20%;
 }
 body ul {
   list-style-type: none;
