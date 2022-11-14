@@ -17,39 +17,61 @@
     />
   </head>
   <body>
-    <h1 id="imp" 
-    style="font-size: 4rem;
-    background: linear-gradient(to right, rgb(67, 124, 205), rgb(69, 214, 202));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;">
-      ▎Obecnie strona tylko w wersji mobilnej
-    </h1>
+    <div id="non-line-wrapper">
+      <h1
+        id="imp"
+        style="
+          font-size: 4rem;
+          background: linear-gradient(
+            to right,
+            rgb(67, 124, 205),
+            rgb(69, 214, 202)
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        "
+      >
+        ▎Obecnie strona tylko w wersji mobilnej
+      </h1>
 
-    <h1 id="header">Zasady</h1>
-    <hr/>
-    <ul>
-      <li>Lorem, ipsum dolor.</li>
-      <li>Lorem ipsum dolor sit amet.</li>
-      <li>Lorem ipsum dolor sit amet consectetur.</li>
-    </ul>
-    <div id="quest"></div>
-    <div id="buttons-wrapper">
-      <form id="myform">
-        <input type="button" value="Odp1" id="answer1" class="btn" />
-        <input type="button" value="Odp2" id="answer2" class="btn" />
-        <input type="button" value="Odp3" id="answer3" class="btn" />
-        <input type="button" value="Odp4" id="answer4" class="btn" />
-      </form>
+      <h1 id="header">Zasady</h1>
+      <hr />
+      <ul>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet consectetur.</li>
+      </ul>
+      <div id="quest"></div>
+      <div id="buttons-wrapper">
+        <form id="myform">
+          <input type="button" value="Odp1" id="answer1" class="btn" />
+          <input type="button" value="Odp2" id="answer2" class="btn" />
+          <input type="button" value="Odp3" id="answer3" class="btn" />
+          <input type="button" value="Odp4" id="answer4" class="btn" />
+        </form>
+      </div>
+      <div class="start-prev-wrapper">
+        <input
+          id="prev"
+          type="button"
+          value="Previous"
+          style="display: none"
+          disabled
+        />
+        <input id="next" type="button" value="Start" />
+      </div>
     </div>
-    <div class="start-prev-wrapper">
-      <input
-        id="prev"
-        type="button"
-        value="Previous"
-        style="display: none"
-        disabled
-      />
-      <input id="next" type="button" value="Start" />
+    <div class="lines">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
     </div>
     <script src="js/random-questions.js"></script>
     <script src="js/script.js"></script>

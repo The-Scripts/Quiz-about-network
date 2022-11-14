@@ -17,9 +17,9 @@ let questNumb = 0;
 
 function prevAndNext() {
   header.textContent = `Pytanie ${questNumb}`;
-  quest.textContent = randomQuestions[questNumb-1].question;
+  quest.textContent = randomQuestions[questNumb - 1].question;
   for (let i = 0; i < 4; i++) {
-    answerButtons[i].value = randomQuestions[questNumb-1].answerOrder[i];
+    answerButtons[i].value = randomQuestions[questNumb - 1].answerOrder[i];
   }
   checkPrevBtn();
 }
@@ -40,7 +40,8 @@ function checkPrevBtn() {
 // Next
 nextBtn.addEventListener("click", () => {
   if (questNumb == 0) nextBtn.setAttribute("value", "Next");
-  if (questNumb < 10) { // amount of questions
+  if (questNumb < 10) {
+    // amount of questions
     document.getElementsByTagName("ul")[0].textContent = " "; // deleting principles
     questNumb++;
     prevAndNext();
