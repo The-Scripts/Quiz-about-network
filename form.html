@@ -1,15 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Title</title>
-</head>
-<body>
-    <form action="PHPMailer.php" method="post">
-        Imie <input type="text" name="name"> <br>
-        Nazwisko <input type="text" name="surname"> <br>
-        Email <input type="email" name="email"> <br>
-        <input type="button" value="Wyślij">
-    </form>
-</body>
+    <link
+      rel="stylesheet"
+      href="css/form_styling/form_mobile.css"
+      media="screen and (orientation: portrait)"
+    />
+  </head>
+  <body>
+    <div id="form_container">
+      <form action="PHPMailer.php" method="post">
+        Imię <input type="text" name="name" /> <br />
+        Nazwisko <input type="text" name="surname" /> <br />
+        Email <input type="email" name="email" /> <br />
+        <input type="button" value="Wyślij" id="submit_btn" />
+      </form>
+    </div>
+    <div class="lines">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  </body>
 </html>
