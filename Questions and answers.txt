@@ -1,0 +1,301 @@
+Questions and answers
+1. Jakie urządzenia mają adres MAC?
+	> a. Sprzęt sieciowy
+	b. Każde urządzenie
+	c. Peryferia
+	d. Procesory
+
+2. Co to jest numer IP?
+	> a. Ciąg liter i cyfr
+	b. Lista urządzeń w sieci
+	c. Maska podsieci
+	d. Geolokalizacja urządzenia
+
+3. Jakie mamy klasy numerów IP?
+	> a. A, B, C
+	b. Low, Medium, High
+	c. 1, 2, 3
+	d. Base, Medium, Full
+
+4. Do czego służy maska podsieci?
+	> a. Znalezienie hosta w IP
+	b. Znalezienie sieci w IP
+	c. Znalezienie IP
+	d. Znalezienie adresu MAC
+
+5. Do czego służy nam protokół TCP/IP?
+	> a. Ujednolica przesyłane pakiety
+	b. Przesyła pakiety
+	c. Szyfruję pakiety
+	d. Identyfikacji urządzeń
+
+6. Serwer zajmuje się: 
+	> a. Udostępnianiem zasobów
+	b. Wyświetlaniem obrazu
+	c. Drukowaniem
+	d. Kopaniem BTC
+
+7. Czym jest klient?
+	> a. Przyjmuje informacje z serwera
+	b. Dostarcza zasoby
+	c. Wysyła informacje do hosta
+	d. Jest spisem protokołów
+
+8. Czym się charakteryzuję sieć P2P?
+	> a. Brakiem serwera
+	b. Posiadaniem serwera
+	c. Punktem centralny
+	d. Kształtem pierścienia
+
+9. Do czego służy serwer DNS?
+	> a. Do tłumaczenia nazw domen
+	b. Do udostępniania zasobów
+	c. Do Przesyłania danych
+	d. Do tłumaczenia IP
+ 
+10. Co to jest serwer DHCP?
+	> a. Wysyła IP 
+	b. Wysyła dokument
+	c. Przetwarza informacje
+	d. Przetwarza IP
+
+11. Na co pozwala serwer pocztowy?
+	> a. Na wysyłanie wiadomości 
+	b. Przetwarzanie żądań HTTP
+	c. Wykonywanie trudnych obliczeń
+	d. Przechowywanie danych
+
+12. Jaki jest domyślny port serwera usługi WWW?
+	> a. 80
+	b. 8080
+	c. 8081
+	d. 800
+
+13. Zestaw reguł definiujących sposób przesyłania informacji w sieci opisuje
+	> a. Protokół
+	b. Zasada
+	c. Reguła
+	d. Standard
+
+14. Jaki adres IP odpowiada nazwie mnemonicznej localhost?
+	> a. 127.0.0.1
+	b. 192.168.1.255
+	c. 192.168.1.0
+	d. 192.168.1.1
+
+15. Który protokół zapewnia szyfrowane połączenia?
+	> a. SSH
+	b. TELNET
+	c. DHCP
+	d. DNS	
+
+16. Który z protokołów jest stosowany w telefonii internetowej?
+	> a. SIP
+	b. FTP
+	c. NetBEUI
+	d. HTTP
+
+17. Do zdalnego zarządzania stacjami roboczymi nie jest stosowany
+	> a. Program Wireshark
+	b. Pulpit zdalny
+	c. program UltraVNC
+	d. program TeamViewer
+
+18. Na czym polega różnica pomiędzy serwerem WWW a FTP?
+	> a. WWW jest szybszy
+	b. FTP jest szybszy
+	c. WWW jest tak samo szybki
+	d. FTP posiada równoległe pobieranie
+ 
+19. PAN ma zasięg: 
+	> a. Lokalny
+	b. Krajowy
+	c. Globalny
+	d. Międzynarodowy
+
+20. Topologie fizyczne sieci to m.in.  
+	> a. Magistrala i gwiazda
+	b. Okrętka i skrętka
+	c. Obwód i obrys
+	d. Obwódka i obrys
+
+21. Topologia logiczna sieci to m. in.
+	> a. Punkt-punkt
+	b. Przekazywanie monety
+	c. Jednodostępowa
+	d. Równoległa
+
+22. Media sieciowe dzielimy na:
+	> a. Przewodowe i bezprzewodowe
+	b. Skrętki i światłowody
+	c. LAN i WAN
+	d. LAN i MAN
+
+23. Jaką jednostkę danych stosujemy w sieciach
+	> a. b/s
+	b. B/s
+	c. KiB/s
+	d. MB/s
+
+24. Jaka jest komenda na sprawdzenie pingu w CMD?
+	> a. Ping [adres]
+	b. Ipconfig [adres]
+	c. Net view [adres]
+	d. Display ping [adres]
+
+25. Jakie informacje wyświetla komenda ipconfig /all?
+	> a. Pełna konfiguracja TCP/IP
+	b. Zawartość pamięci podręcznej
+	c. Identyfikator klasy DHCP
+	d. Wysyła komunikat DHCP
+
+26. Jakie zakłócenie może wystąpić w kablu?
+	> a. Przesłuch
+	b. Posłuch
+	c. Przesłuch
+	d. Echo
+
+27. Sieci w standardzie Ethernet do 100 Mbit/s.
+	> a. Ethernet 
+	b. Fast Ethernet
+	c. Faster Ethernet
+	d. Gigabit Ethernet
+ 
+28. Narzędzia zaciskające złączki na końcach przewodów.
+	> a. Zaciskarka
+	b. Ściagacz
+	c. Obcinacz
+	d. Obrabiarka
+
+29. Co chroni nas przed zwarciem?
+	> a. Wyłącznik nadmiarowo-prądowy
+	b. Wyłącznik wrażliwy 
+	c. Wyłącznik przepięciowy
+	d. Wyłącznik różnicowoprądowy
+
+30. Narzędzia do uderzeniowe do terminali LSA
+	> a. Nóż krosowniczy
+	b. Przyciskarka
+	c. Przeciskarka
+	d. Narzędzie uniwersalne
+
+31. Typ okablowania w dużych sieciach
+	> a. Kampusowe
+	b. Pionowe
+	c. Poziome
+	d. Piętrowe
+
+32. Metoda wytwarzania jakiegoś dobra
+	> a. Technologia 
+	b. Przemysł
+	c. Produkcja
+	d. Industrializacja
+
+33. Karta która przekształca pakiety danych w sygnały.
+	> a. Karta sieciowa
+	b. Karta Ethernet
+	c. Karta Wi-Fi
+	d. Karta transferująca
+
+34. Kolor ostatniej żyłki w skrętce typu B
+	> a. Brązowy
+	b. Niebieski
+	c. Zielony
+	d. Pomarańczowy
+
+35. Kolor drugiej żyłki w skrętce typu A
+	> a. Zielony
+	b. Niebieski
+	c. Brązowy
+	d. Pomarańczowy
+
+36. Rodzaj przewodu służącego do przesyłania informacji
+	> a. Skrętka
+	b. Okrętka
+	c. Owijka
+	d. Skrętki
+ 
+37. Jaką długość ma IPv4?
+	> a. 32 bity
+	b. 64 bity
+	c. 16 bitów
+	d. 8 bitów
+
+38. Pojęcie skrętka nieekranowa dotyczy skrótu:
+	> a. UTP
+	b. ETP
+	c. IOT
+	d. IOP
+
+39. Przyszłościowa sieć w standardzie Ethernet
+	> a. 10 gigabit 
+	b. 50 gigabit
+	c. 1 gigabit
+	d. 100 gigabit
+
+40. Skrętka kat. 6 ma zasięg:
+	> a. 100 metrów
+	b. 50 metrów
+	c. 150 metrów 
+	d. 80 metrów
+
+41. Kabel FTP to
+	> a. Kabel foliowany
+	b. Kabel niefoliowany
+	c. Kabel z uziemieniem
+	d. Kabel z oplotem
+
+42. Podstawa systemu binarnego to:
+	> a. 2 
+	b. 10
+	c. 16
+	d. 1
+
+43. Skrętka UTP składa się z 
+	> a. czterech par
+	b. dwóch par
+	c. ośmiu par
+	d. sześciu par
+
+44. IPv6 ma długość
+	> a. 128 bitów
+	b. 64 bitów
+	c. 256 bitów
+	d. 32 bitów
+
+45. Jaką długość ma adres MAC?
+	> a. 48 bity
+	b. 32 bity
+	c. 64 bity
+	d. 54 bity
+ 
+46. NAT tłumaczy adresy
+	> a. Prywatne na publiczne
+	b. Publiczne na prywatne 
+	c. Lokalne na ogólne
+	d. Ogólne na lokalne
+
+47. Urządzenie sieciowe to m. in.
+	> a. Koncentrator 
+	b. Kompensator
+	c. Kontener
+	d. Kondensator
+
+48. Ile mamy klas adresu IPv4?
+	> a. 5
+	b. 4
+	c. 3
+	d. 6
+
+49. Zapora internetowa służy do:
+	> a. Filtrowania ruchu
+	b. Filtrowania danych
+	c. Wyszukiwania adresów IP
+	d. Sprawdzania informacji
+
+50. Który protokół jest wykorzystywany prze polecenie ping?
+	> a. ICMP
+	b. IPX
+	c. FTP
+	d. SMTP
+

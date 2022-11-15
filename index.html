@@ -1,31 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz</title>
-    <link rel="stylesheet" href="css/mobile.css" media="screen and (orientation: portrait)">
-    <link rel="stylesheet" href="css/desktop.css" media="screen and (orientation: horizontal)">
-</head>
-<body>
-    <h1>Zasady</h1>
-    <hr>
-    <ul>
+    <link
+      rel="stylesheet"
+      href="css/mobile.css"
+      media="screen and (orientation: portrait)"
+    />
+    <link
+      rel="stylesheet"
+      href="css/desktop.css"
+      media="screen and (orientation: horizontal)"
+    />
+  </head>
+  <body>
+    <div id="non-line-wrapper">
+      <h1
+        id="imp"
+        style="
+          font-size: 4rem;
+          background: linear-gradient(
+            to right,
+            rgb(67, 124, 205),
+            rgb(69, 214, 202)
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        "
+      >
+        ▎Obecnie strona tylko w wersji mobilnej
+      </h1>
+
+      <h1 id="header">Zasady</h1>
+      <hr />
+      <ul>
         <li>Lorem, ipsum dolor.</li>
         <li>Lorem ipsum dolor sit amet.</li>
         <li>Lorem ipsum dolor sit amet consectetur.</li>
-    </ul>
-    <div id="quest"></div>
-
-    <form id="myform">
-        <input type="button" value="Odp1">
-        <input type="button" value="Odp2">
-        <input type="button" value="Odp3">
-        <input type="button" value="Odp4">
-    </form>
-
-    <input id="next" type="button" value="Start">
+      </ul>
+      <div id="quest"></div>
+      <div id="buttons-wrapper">
+        <form id="myform">
+          <input type="button" value="Odp1" id="answer1" class="btn" />
+          <input type="button" value="Odp2" id="answer2" class="btn" />
+          <input type="button" value="Odp3" id="answer3" class="btn" />
+          <input type="button" value="Odp4" id="answer4" class="btn" />
+        </form>
+      </div>
+      <div class="start-prev-wrapper">
+        <input
+          id="prev"
+          type="button"
+          value="Previous"
+          style="display: none"
+          disabled
+        />
+        <input id="next" type="button" value="Start" />
+      </div>
+    </div>
+    <div class="lines">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <script src="js/random-questions.js"></script>
     <script src="js/script.js"></script>
 <!--    <script src="js/BlockInspectElement.js"></script>-->
 </body>

@@ -1,38 +1,58 @@
 const nextBtn = document.getElementById("next");
-let ktrPyt = 1;
+const prevBtn = document.getElementById("prev");
+const btnwrap = document.getElementById("buttons-wrapper");
+const header = document.getElementById("header");
+const quest = document.getElementById("quest");
 
-//czas
-//pytania i odpowiedzi lista2D
-//tab co już było
-//licznik i wyświetlacz ilości pytań
+let answerButtons = new Array(
+  document.getElementById("answer1"),
+  document.getElementById("answer2"),
+  document.getElementById("answer3"),
+  document.getElementById("answer4")
+);
 
+let questNumb = 0;
 
+// TODO: Time limit
+
+function prevAndNext() {
+  header.textContent = `Pytanie ${questNumb}`;
+  quest.textContent = randomQuestions[questNumb - 1].question;
+  for (let i = 0; i < 4; i++) {
+    answerButtons[i].value = randomQuestions[questNumb - 1].answerOrder[i];
+  }
+  checkPrevBtn();
+}
+
+// Removing prev button
+function checkPrevBtn() {
+  if (questNumb >= 1) {
+    prevBtn.removeAttribute("disabled");
+    prevBtn.style.display = "block";
+  }
+  if (questNumb == 1) {
+    prevBtn.style.display = "none";
+    btnwrap.style.display = "block";
+  }
+  nextBtn.style.width = "40vw";
+}
+
+// Next
 nextBtn.addEventListener("click", () => {
-    document.getElementsByTagName("ul")[0].textContent = " "; //usuwa zasady
+  if (questNumb == 0) nextBtn.setAttribute("value", "Next");
+  if (questNumb < 10) {
+    // amount of questions
+    document.getElementsByTagName("ul")[0].textContent = " "; // deleting principles
+    questNumb++;
+    prevAndNext();
+  }
+});
 
-    switch(ktrPyt) {
-        case 1:
-            document.getElementsByTagName("h1")[0].textContent = "Pytanie 1"; //wyświetla które pytanie z koleji
-            document.getElementById("quest").textContent = "Lorem ipsum dolor sit amet? 1"; //wyświetla wylosowane pytanie
-        break;
-        case 2:
-            document.getElementsByTagName("h1")[0].textContent = "Pytanie 2";
-            document.getElementById("quest").textContent = "Lorem ipsum dolor sit amet? 2";
-        break;
-        case 3:
-            document.getElementsByTagName("h1")[0].textContent = "Pytanie 3";
-            document.getElementById("quest").textContent = "Lorem ipsum dolor sit amet? 3";
-        break;
-        case 4:
-            document.getElementsByTagName("h1")[0].textContent = "Pytanie 4";
-            document.getElementById("quest").textContent = "Lorem ipsum dolor sit amet? 4";
-            break;
-        case 5:
-            document.getElementsByTagName("h1")[0].textContent = "Pytanie 5";
-            document.getElementById("quest").textContent = "Lorem ipsum dolor sit amet? 5";
-        break;
-    }
-
-ktrPyt++;
-})
-
+// Prev
+prevBtn.addEventListener("click", () => {
+  if (questNumb > 1) {
+    document.getElementsByTagName("ul")[0].textContent = "";
+    questNumb--;
+    prevAndNext();
+  }
+});
