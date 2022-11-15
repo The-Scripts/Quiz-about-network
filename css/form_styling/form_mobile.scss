@@ -1,0 +1,199 @@
+$bg_prim: #171717;
+$text_prim: #eeeeee;
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+body {
+    background:$bg_prim;
+    width: 100%;
+    height: 100%;
+
+    /*&:before {
+        content: '';
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgb(241, 241, 241), rgb(128, 255, 191));
+        clip-path: circle(20% at 60% 40%);
+        z-index: 10;
+        animation: move 5s infinite linear;
+    }*/
+
+    #form_container {
+        display: flex;
+        width: 100;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        z-index: 60;
+    }
+
+    form {
+        
+        z-index: 90;
+        background-color: rgba(32, 32, 32, 0.8);
+        width: 70%;
+        height:50%;
+        backdrop-filter: blur(10px);
+        border-radius: 40px;
+        color: $text_prim;
+        border-top: 2px solid rgba(255, 255, 255, 0.1);
+        border-left: 2px solid rgba(255, 255, 255, 0.1);
+        font-size: 3vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+
+        input {
+            height: 8%;
+            width: 70%;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid #eeeeee;
+            color: $text_prim;
+            border-radius: 20px;
+            font-size: 3vh;
+            text-align: center;
+    }
+
+    #submit_btn {
+        background: $text_prim;
+        color: $bg_prim;
+        margin-top: -1%;
+        width: 50%;
+        transition: 0.2s ease;
+
+        &:active {
+            background: #171717;
+            color: $text_prim;
+        }
+        
+
+}
+    }
+
+.lines {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    margin: auto;
+    z-index: 2;
+}
+
+.line {
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    background: rgba(255, 255, 255, 0.0);
+    overflow: hidden;
+    z-index: 2;
+    &::After {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 15vh;
+        width: 100%;
+        top: -50%;
+        left: 0;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #fff 75%, rgb(128, 255, 191) 100%);
+        animation: drop 7s 0s infinite;
+        animation-fill-mode: forwards;
+        animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+
+    }
+
+    &:nth-child(2) {
+
+        margin-left: -10%;
+        &::after {
+            animation-delay: 2s;
+        }
+    }
+
+    &:nth-child(3) {
+        margin-left: 10%;
+        &::after {
+            animation-delay: 2.5s;
+        }
+    }
+
+    &:nth-child(4) {
+        margin-left: -20%;
+        &::after {
+            animation-delay: 3s;
+        }
+    }
+
+    &:nth-child(5) {
+        margin-left: 20%;
+        &::after {
+            animation-delay: 3.5s;
+        }
+    }
+
+    &:nth-child(6) {
+        margin-left: -30%;
+        &::after {
+            animation-delay: 4s;
+        }
+    }
+
+    &:nth-child(7) {
+        margin-left: 30%;
+        &::after {
+            animation-delay: 4.5s;
+        }
+    }
+
+    &:nth-child(8) {
+        margin-left: -40%;
+        &::after {
+            animation-delay: 5s;
+        }
+    }
+
+    &:nth-child(9) {
+        margin-left: 40%;
+        &::after {
+            animation-delay: 5.5s;
+        }
+    }
+}
+
+@keyframes drop {
+  0% {
+    top: -50%;
+  }
+  100% {
+    top: 110%;
+  }
+}
+
+
+
+@keyframes move {
+    0% {
+        background-position: 0%;
+    }
+
+    50% {
+        background-position: 100%;
+    }
+
+    0% {
+        background-position: 0%;
+    }
+}
+}
