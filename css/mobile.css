@@ -2,6 +2,8 @@
 body {
   background: #171717;
   background-size: 600% 600%;
+  -webkit-animation: gradient 15s ease infinite;
+          animation: gradient 15s ease infinite;
   height: 98%;
   font-family: "Roboto", sans-serif;
   margin: 0;
