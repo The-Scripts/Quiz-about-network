@@ -40,16 +40,20 @@ function checkPrevBtn() {
 // Next
 nextBtn.addEventListener("click", () => {
   if (questNumb == 0) nextBtn.setAttribute("value", "Next");
+  if (questNumb == 9) nextBtn.setAttribute("value", "Submit")
   if (questNumb < 10) {
     // amount of questions
     document.getElementsByTagName("ul")[0].textContent = " "; // deleting principles
     questNumb++;
     prevAndNext();
   }
+  
 });
 
 // Prev
 prevBtn.addEventListener("click", () => {
+  if (questNumb <= 10) nextBtn.setAttribute("value", "Next");
+  
   if (questNumb > 1) {
     document.getElementsByTagName("ul")[0].textContent = "";
     questNumb--;
