@@ -11,9 +11,11 @@ let answerButtons = new Array(
   document.getElementById("answer4")
 );
 
+let answers = [10];
 let questNumb = 0;
 
 // TODO: Time limit
+// TODO: checked button opacity
 
 function prevAndNext() {
   header.textContent = `Pytanie ${questNumb}`;
@@ -52,6 +54,7 @@ nextBtn.addEventListener("click", () => {
 
 // Prev
 prevBtn.addEventListener("click", () => {
+  
   if (questNumb <= 10) nextBtn.setAttribute("value", "Next");
   
   if (questNumb > 1) {
@@ -60,3 +63,71 @@ prevBtn.addEventListener("click", () => {
     prevAndNext();
   }
 });
+
+// Randomize questions
+const questions = new Array(
+  question01, question02, question03, question04, question05, question06, question07, question08, question09,
+  question10, question11, question12, question13, question14, question15, question16, question17, question18,
+  question19, question20, question21, question22, question23, question24, question25, question26, question27,
+  question28, question29, question30, question31, question32, question33, question34, question35, question36,
+  question37, question38, question39, question40, question41, question42, question43, question44, question45,
+  question46, question46, question47, question48, question50
+);
+
+function randomizeNumbers(howMany, ceiling) {
+  let randomNumbers = [];
+  let nextNumber = true;
+  let number = 0;
+  for (let i = 0; i < howMany; i++) {
+      do {
+          nextNumber = false
+          number = Math.round(Math.random() * (ceiling - 1));
+          for (let a = 0; a < i; a++) {
+              if (number == randomNumbers[a]) {
+                  nextNumber = true;
+                  break;
+              }
+              
+          }
+      } while (nextNumber == true);
+      randomNumbers.push(number);
+  }
+
+  return randomNumbers;
+}
+
+let randomQuestions = new Array(10);
+let order = new Array(4);
+let randomNumbersForQuestions = new Array(10);
+let randomNumbersForOrder = new Array(4);
+
+randomNumbersForQuestions = randomizeNumbers(10, 50);
+
+for (let i = 0; i < 10; i++) {
+  randomQuestions[i] = questions[randomNumbersForQuestions[i]];
+}
+
+for (let i = 0; i < 10; i++) {
+  randomNumbersForOrder = randomizeNumbers(4, 4);
+  randomQuestions[i].answerOrder = [0, 1, 2, 3];
+  for (let a = 0; a < 4; a++) {
+      randomQuestions[i].answerOrder[a] = randomQuestions[i].options[randomNumbersForOrder[a]];
+  }
+}
+
+// Saving answers
+document.getElementById("myform").addEventListener("click", (event) => {
+  let checkedButton = event.target.value
+  if (checkedButton != "") {
+    for (let i = 0; i < 4; i++) {
+      answerButtons[i].style.opacity = 1;
+    }
+    event.target.style.opacity = 0.6;
+    answers[questNumb] = checkedButton;
+  } else {
+    event.target.style.opacity = 0.6;
+    answers[questNumb] = checkedButton;
+  }
+});
+
+// Checking answers
