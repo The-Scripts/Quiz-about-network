@@ -27,6 +27,7 @@ function prevAndNext() {
 // Removing prev button
 function checkPrevBtn() {
   if (questNumb >= 1) {
+
     prevBtn.removeAttribute("disabled");
     prevBtn.style.display = "block";
   }
