@@ -11,8 +11,11 @@ let answerButtons = new Array(
   document.getElementById("answer4")
 );
 
-let answers = [10];
+let answers = [];
 let questNumb = 0;
+let score = 0;
+let randomQuestions = new Array(10);
+
 
 // TODO: Time limit
 // TODO: checked button opacity
@@ -24,6 +27,15 @@ function prevAndNext() {
     answerButtons[i].value = randomQuestions[questNumb - 1].answerOrder[i];
   }
   checkPrevBtn();
+
+  // Ticking checked buttons
+  for (let i = 0; i < 4; i++) {
+    if (answers[questNumb] == answerButtons[i].value) {
+      answerButtons[i].style.opacity = 0.6;
+    } else {
+      answerButtons[i].style.opacity = 1;
+    }
+  }
 }
 
 // Removing prev button
@@ -41,6 +53,27 @@ function checkPrevBtn() {
 
 // Next
 nextBtn.addEventListener("click", () => {
+  if (nextBtn.value == "Submit") {
+    // Deleting buttons
+    for (let i = 0; i < 4; i++) {
+      answerButtons[i].style.display = "none";
+    }
+    nextBtn.style.display = "none";
+    prevBtn.style.display = "none";
+    // Checking answers
+    for (let i = 0; i < 10; i++) {
+      if (answers[i] == randomQuestions[i].options[0]) {
+        score++;
+      }
+    }
+    quest.textContent = `Twój wynik: ${score}/10`
+    for (let i = 0; i < 10; i++) {
+      if (answers[i] == undefined) answers[i] = "Brak odpowiedzi";
+      quest.innerHTML += `<br> <br> Pytanie ${i+1} <br> Twoja odpowiedz: ${answers[i]} <br> Poprawna odpowidz: ${randomQuestions[i].options[0]}`;
+    }
+    console.log(score)
+  }
+
   if (questNumb == 0) nextBtn.setAttribute("value", "Next");
   if (questNumb == 9) nextBtn.setAttribute("value", "Submit")
   if (questNumb < 10) {
@@ -49,6 +82,7 @@ nextBtn.addEventListener("click", () => {
     questNumb++;
     prevAndNext();
   }
+  
   
 });
 
@@ -96,7 +130,6 @@ function randomizeNumbers(howMany, ceiling) {
   return randomNumbers;
 }
 
-let randomQuestions = new Array(10);
 let order = new Array(4);
 let randomNumbersForQuestions = new Array(10);
 let randomNumbersForOrder = new Array(4);
@@ -123,11 +156,10 @@ document.getElementById("myform").addEventListener("click", (event) => {
       answerButtons[i].style.opacity = 1;
     }
     event.target.style.opacity = 0.6;
-    answers[questNumb] = checkedButton;
+    answers[questNumb-1] = checkedButton;
   } else {
     event.target.style.opacity = 0.6;
-    answers[questNumb] = checkedButton;
+    answers[questNumb-1] = checkedButton;
   }
+  console.log(answers);
 });
-
-// Checking answers
