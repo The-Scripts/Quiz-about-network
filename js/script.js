@@ -151,15 +151,18 @@ for (let i = 0; i < 10; i++) {
 // Saving answers
 document.getElementById("myform").addEventListener("click", (event) => {
   let checkedButton = event.target.value
-  if (checkedButton != "") {
-    for (let i = 0; i < 4; i++) {
-      answerButtons[i].style.opacity = 1;
+  if (event.target.type == "button") {
+    if (checkedButton != "") {
+      for (let i = 0; i < 4; i++) {
+        answerButtons[i].style.opacity = 1;
+      }
+      event.target.style.opacity = 0.6;
+      answers[questNumb-1] = checkedButton;
+    } else {
+      event.target.style.opacity = 0.6;
+      answers[questNumb-1] = checkedButton;
     }
-    event.target.style.opacity = 0.6;
-    answers[questNumb-1] = checkedButton;
-  } else {
-    event.target.style.opacity = 0.6;
-    answers[questNumb-1] = checkedButton;
   }
+  
   console.log(answers);
 });
