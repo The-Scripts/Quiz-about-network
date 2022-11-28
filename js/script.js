@@ -30,7 +30,7 @@ function prevAndNext() {
 
   // Ticking checked buttons
   for (let i = 0; i < 4; i++) {
-    if (answers[questNumb] == answerButtons[i].value) {
+    if (answers[questNumb-1] == answerButtons[i].value) {
       answerButtons[i].style.opacity = 0.6;
     } else {
       answerButtons[i].style.opacity = 1;
@@ -88,7 +88,6 @@ nextBtn.addEventListener("click", () => {
 
 // Prev
 prevBtn.addEventListener("click", () => {
-  
   if (questNumb <= 10) nextBtn.setAttribute("value", "Next");
   
   if (questNumb > 1) {
