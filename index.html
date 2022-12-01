@@ -2,64 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Quiz</title>
+    <title>Formularz</title>
     <link
       rel="stylesheet"
-      href="css/mobile.css"
+      href="css/form_styling/form_mobile.css"
       media="screen and (orientation: portrait)"
-    />
-    <link
-      rel="stylesheet"
-      href="css/desktop.css"
-      media="screen and (orientation: horizontal)"
     />
   </head>
   <body>
-    <div id="non-line-wrapper">
-      <h1
-        id="imp"
-        style="
-          font-size: 4rem;
-          background: linear-gradient(
-            to right,
-            rgb(67, 124, 205),
-            rgb(69, 214, 202)
-          );
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-        "
-      >
-        ▎Obecnie strona tylko w wersji mobilnej
-      </h1>
-
-      <h1 id="header">Zasady</h1>
-      <hr />
-      <ul>
-        <li>Lorem, ipsum dolor.</li>
-        <li>Lorem ipsum dolor sit amet.</li>
-        <li>Lorem ipsum dolor sit amet consectetur.</li>
-      </ul>
-      <div id="quest"></div>
-      <div id="buttons-wrapper">
-        <form id="myform">
-          <input type="button" value="Odp1" id="answer1" class="btn" />
-          <input type="button" value="Odp2" id="answer2" class="btn" />
-          <input type="button" value="Odp3" id="answer3" class="btn" />
-          <input type="button" value="Odp4" id="answer4" class="btn" />
-        </form>
-      </div>
-      <div class="start-prev-wrapper">
-        <input
-          id="prev"
-          type="button"
-          value="Previous"
-          style="display: none"
-          disabled
-        />
-        <input id="next" type="button" value="Start" />
-      </div>
+    <div id="form_container">
+      <form action="PHPMailer.php" method="post">
+        Imię <input type="text" name="name" id="user-name" /> <br />
+        Nazwisko <input type="text" name="surname" id="user-surname" /> <br />
+        Email <input type="email" name="email" id="user-email" /> <br />
+        <input type="button" value="Wyślij" id="submit-btn" />
+      </form>
     </div>
     <div class="lines">
       <div class="line"></div>
@@ -73,7 +30,6 @@
       <div class="line"></div>
       <div class="line"></div>
     </div>
-    <script src="js/random-questions.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/form.js"></script>
   </body>
 </html>
