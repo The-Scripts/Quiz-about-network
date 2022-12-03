@@ -1,4 +1,4 @@
-let error = true;
+let error = false;
 
 document.getElementById("submit-btn").addEventListener("click", (event) => {
     if (error == false) {
