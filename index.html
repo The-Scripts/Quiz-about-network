@@ -2,28 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Formularz</title>
+    <title>Title</title>
     <link
       rel="stylesheet"
       href="css/form_styling/form_mobile.css"
       media="screen and (orientation: portrait)"
     />
-    <link
-      rel="stylesheet"
-      href="css/desktop.css"
-      media="screen and (orientation: landscape)"
-    />
   </head>
   <body>
     <div id="form_container">
-      <form action="PHPMailer.php" method="post" id="user-form">
-        Imię <input type="text" name="name" id="user-name" /> <br />
-        Nazwisko <input type="text" name="surname" id="user-surname" /> <br />
-        Email <input type="email" name="email" id="user-email" /> <br />
-        <input type="button" value="Wyślij" id="submit-btn" />
+      <form action="PHPMailer.php" method="post">
+        Imię <input type="text" name="name" /> <br />
+        Nazwisko <input type="text" name="surname" /> <br />
+        Email <input type="email" name="email" /> <br />
+        <input type="button" value="Wyślij" id="submit_btn" />
       </form>
-    </div>
-    <div id="error">
     </div>
     <div class="lines">
       <div class="line"></div>
@@ -37,6 +30,5 @@
       <div class="line"></div>
       <div class="line"></div>
     </div>
-    <script src="js/form.js"></script>
   </body>
 </html>
