@@ -67,8 +67,4 @@ document.getElementById("user-form").addEventListener("focusout", (event) => {
             document.getElementById(`error-user-email`).remove();
         }
     } 
-
-    if (errorElement.children.length == 0) {
-        errorElement.remove();
-    }
 })
