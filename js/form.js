@@ -36,7 +36,7 @@ const checkNames = (inputToCheck) => {
 
 document.getElementById("submit-btn").addEventListener("click", (event) => {
     if (error == false && userName.value != "" && userSurname.value != "" && userEmail.value != "") {
-        window.location.href = "./quiz.html";
+        window.location.replace("https://the-scripts.github.io/Quiz-about-network/quiz.html");
         sessionStorage.setItem("user-name", userName.value.trim());
         sessionStorage.setItem("user-surname", userSurname.value.trim());
         sessionStorage.setItem("user-email", userEmail.value.trim());
@@ -67,8 +67,4 @@ document.getElementById("user-form").addEventListener("focusout", (event) => {
             document.getElementById(`error-user-email`).remove();
         }
     } 
-
-    if (errorElement.children.length == 0) {
-        errorElement.remove();
-    }
 })
