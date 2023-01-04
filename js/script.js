@@ -16,10 +16,6 @@ let questNumb = 0;
 let score = 0;
 let randomQuestions = new Array(10);
 
-
-// TODO: Time limit
-// TODO: checked button opacity
-
 function prevAndNext() {
   header.textContent = `Pytanie ${questNumb}`;
   quest.textContent = randomQuestions[questNumb - 1].question;
@@ -66,12 +62,15 @@ nextBtn.addEventListener("click", () => {
         score++;
       }
     }
-    quest.textContent = `Twój wynik: ${score}/10`
+    // Showing answer in the end
+    header.innerHTML = `Twój wynik: ${score}/10`
+    document.getElementById("buttons-wrapper").style.display = "none";
+    document.getElementsByClassName("start-prev-wrapper")[0].style.display = "none"
+    quest.innerHTML = `<p></p>`
     for (let i = 0; i < 10; i++) {
       if (answers[i] == undefined) answers[i] = "Brak odpowiedzi";
-      quest.innerHTML += `<br> <br> Pytanie ${i+1} <br> Twoja odpowiedz: ${answers[i]} <br> Poprawna odpowidz: ${randomQuestions[i].options[0]}`;
+        quest.innerHTML += `<p>Pytanie ${i+1} <br> Twoja odpowiedz: ${answers[i]} <br> Poprawna odpowidz: ${randomQuestions[i].options[0]}</p>`;
     }
-    console.log(score)
   }
 
   if (questNumb == 0) nextBtn.setAttribute("value", "Next");
