@@ -1,3 +1,4 @@
+document.getElementById("full-name").innerHTML = `${sessionStorage.getItem("user-name")} ${sessionStorage.getItem("user-surname")}`;
 const elementToPdf = document.getElementById("root");
 
 let opt = {
