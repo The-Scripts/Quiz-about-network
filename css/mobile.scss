@@ -66,10 +66,9 @@ body {
         font-variant: small-caps;
         width: 90vw;
         height: 20%;
-        transition: 200ms ease-in-out;
         font-weight: bold;
         word-wrap: break-word;
-        transition: all 1s ease-in-out;
+        transition: all .1s ease-in-out;
         &:active {
             transform: translate(-5px -5px);
             box-shadow: none;
