@@ -1,16 +1,10 @@
 const userName = document.getElementById("user-name");
 const userSurname = document.getElementById("user-surname");
 const userEmail = document.getElementById("user-email");
-const errorElement = document.getElementById("error");
+const errorUserName = document.getElementById("error-user-name");
+const errorUserSurname = document.getElementById("error-user-surname");
+const errorUserEmail = document.getElementById("error-user-email");
 let error = true;
-
-const showingInfoError = (infoContent, errorName) => {
-    const errorInfo = document.createElement('p');
-    errorInfo.id = `error-${errorName}`;
-    errorInfo.textContent = infoContent;
-    errorElement.appendChild(errorInfo);
-    errorElement.style.display = "block";
-}
 
 const checkNames = (inputToCheck) => {
     const userNameText = document.getElementById(inputToCheck).value.trim();
@@ -26,11 +20,13 @@ const checkNames = (inputToCheck) => {
     }
 
     if (error && inputToCheck == "user-name") {
-        showingInfoError("Wpisz poprawne imie", inputToCheck);
+        errorUserName.style.display = "block";
     } else if (error) {
-        showingInfoError("Wpisz poprawne nazwisko", inputToCheck);
+        errorUserSurname.style = "block"
+    } else if (error == false && inputToCheck == "user-name") {
+        errorUserName.style.display = "none";
     } else if (error == false) {
-        document.getElementById(`error-${inputToCheck}`).remove();
+        errorUserSurname.style.display = "none";
     }
 }
 
@@ -62,9 +58,9 @@ document.getElementById("user-form").addEventListener("focusout", (event) => {
         }
 
         if (error) {
-            showingInfoError("Wpisz poprawny email", "user-email");
+            errorUserEmail.style.display = 'block';
         } else if (error == false) {
-            document.getElementById(`error-user-email`).remove();
+            errorUserEmail.style.display = 'none';
         }
     } 
 })
