@@ -68,7 +68,7 @@ body #quest {
   text-align: center;
   font-size: 1.5rem;
   overflow: auto;
-  max-height: 85vh;
+  max-height: 91vh;
 }
 body #next {
   color: rgb(211, 209, 209);

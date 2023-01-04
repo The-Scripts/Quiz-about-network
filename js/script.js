@@ -64,7 +64,8 @@ nextBtn.addEventListener("click", () => {
     }
     // Showing answer in the end
     header.innerHTML = `Twój wynik: ${score}/10`
-    document.getElementById("buttons-wrapper").style.display = "none";
+    btnwrap.style.display = "none";
+    document.getElementsByTagName("ul")[0].style.display = "none";
     document.getElementsByClassName("start-prev-wrapper")[0].style.display = "none"
     quest.innerHTML = `<p></p>`
     for (let i = 0; i < 10; i++) {
