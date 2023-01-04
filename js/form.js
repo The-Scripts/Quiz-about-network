@@ -44,23 +44,13 @@ document.getElementById("user-form").addEventListener("focusout", (event) => {
         checkNames(event.target.id);
     } else if (event.target.id == "user-email") {
         const userEmailText = userEmail.value.trim();
-        for (let i = 0; i < userEmailText.length; i++) {
-            const charInI = userEmailText.charCodeAt(i);
-            if ((charInI > 63 && charInI < 90) || 
-            (charInI > 96 && charInI < 123)  ||
-            (charInI > 47 && charInI < 58) ||
-            (charInI == 46)) {
-                error = false;
-            } else {
-                error = true;
-                break;
-            }
-        }
-
-        if (error) {
-            errorUserEmail.style.display = 'block';
-        } else if (error == false) {
+        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(userEmail.value.trim())) {
+            error = false;
             errorUserEmail.style.display = 'none';
+        }
+        else {
+            error = true;
+            errorUserEmail.style.display = 'block';
         }
     } 
 })
