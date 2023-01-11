@@ -82,6 +82,8 @@ body {
         color: $text-primary;
         text-align: center;
         font-size: 1.5rem;
+        overflow: auto;
+        max-height: 91vh;
     }
 
     #next {
