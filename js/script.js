@@ -165,3 +165,11 @@ document.getElementById("myform").addEventListener("click", (event) => {
   
   console.log(answers);
 });
+
+// Link to downaload a certification
+header.addEventListener('click', () => {
+  if (score > 5) {
+    window.open('https://the-scripts.github.io/Quiz-about-network/certification.html', '_blank');
+    document.getElementById("full-name").innerHTML = `${sessionStorage.getItem("user-name")} ${sessionStorage.getItem("user-surname")}`;
+  }
+})
